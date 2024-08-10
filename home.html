@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="black">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="gallary.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="upcommingEvent.css">
+
+    <!-- custom js -->
+    <script src="./javascript/navbarScroll.js"></script>
+</head>
+
+<body >
+    <!-- navbar -->
+    <div id="navbarContainer"></div>
+    <!-- navbar end -->
+
+    <!-- home banner slider -->
+    
+<!-- <div class="slider-container">
+        <div class="slider slider-one slider-active">
+            
+            <div class="slider-image"
+                style="background-image: url('./bannerimages/pexels-mark-angelo-sampan-738078-1587927.jpg')">
+                
+                <div class="image-wrapper"></div>
+                
+                <div class="slider-text animate__animated animate__bounceInLeft">
+                    <div class="text-container">
+                       <h4 class="text">Let's get this</h4> 
+                    </div>                  
+                    <span></span>
+                  
+                    
+                    <p>I try to get away and take my motorcycle on a ride whenever I can. I'll take my bike out before
+                        the show and just cruise. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+                        repellat vel tenetur culpa laudantium porro laboriosa</p>
+                    <div>
+                        <button class="click p-2 mt-5 rounded-lg">Click here</button>
+                    </div>
+                    <div class="flex flex-col gap-4 text-3xl w-12 text-center absolute md:left-[190%] top-[40vh] left-[95%] ">
+                        <i class="cursor-pointer fa-brands fa-square-facebook hover:text-blue-400"></i>
+                        <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
+                        <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="slider slider-two">
+            <div class="slider-image" style="background-image: url('./bannerimages/pexels-rahulp9800-1652353.jpg')">
+                <div class="image-wrapper"></div>
+                <div class="slider-text animate__animated animate__bounceInLeft">
+                    <div class="text-container">
+                        <h4 class="text">Hello did you pick one</h4> 
+                     </div> 
+                    <span></span>
+                                    
+                    <p>I try to get away and take my motorcycle on a ride whenever I can. I'll take my bike out before
+                        the show and just cruise. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+                        repellat vel tenetur culpa laudantium porro laboriosa</p>
+        
+                    <div>
+                        <button class="click p-2 mt-5 rounded-lg">Click here</button>
+                    </div>
+                    <div class="flex flex-col gap-4 text-3xl w-12 text-center absolute md:left-[190%] top-[40vh] left-[95%] ">
+                        <i class="cursor-pointer fa-brands fa-square-facebook hover:text-blue-400"></i>
+                        <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
+                        <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="slider slider-three">
+            <div class="slider-image" style="background-image: url('./bannerimages/pexels-vishnurnair-1105666.jpg')">
+                <div class="image-wrapper"></div>
+                <div class="slider-text animate__animated animate__bounceInLeft">
+                    <div class="text-container">
+                        <h4 class="text">fun togather</h4> 
+                     </div> 
+                    <span></span>                    
+                    <p>I try to get away and take my motorcycle on a ride whenever I can. I'll take my bike out before
+                        the show and just cruise. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+                        repellat vel tenetur culpa laudantium porro laboriosa</p>
+             
+                    <div>
+                        <button class="click p-2 mt-5 rounded-lg">Click here</button>
+                    </div>
+                    <div class="flex flex-col gap-4 text-3xl w-12 text-center absolute md:left-[190%] top-[40vh] left-[95%] ">
+                        <i class="cursor-pointer fa-brands fa-square-facebook hover:text-blue-400"></i>
+                        <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
+                        <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <button class="slider-button prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left-long"></i></button>
+        <button class="slider-button next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right-long"></i></button>
+    </div> -->
+
+    
+    <div class="slider-container">
+        <div class="slider slider-one slider-active">
+            <div class="slider-video">
+                <video autoplay muted loop>
+                    <source src="./bannerimages/event.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="image-wrapper"></div>
+                <div class="slider-text animate__animated animate__bounceInLeft  flex">
+                    <!-- side icon -->
+                    <div class="flex flex-col gap-5 text-2xl w-[3%] pt-[60vh] text-center ml-8">
+                        <i class="cursor-pointer fa-brands fa-square-facebook hover:text-blue-400"></i>
+                        <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
+                        <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
+                    </div>
+
+                    <!-- middle info  --> 
+                    <div class=" ml-[10%]">
+                      <div class="w-[80%]  mt-[20%]">
+                        <div>
+                            <h1>logo</h1>
+                        </div>
+    
+                        <div class="flex items-center gap-0 mt-10">
+                            <div class="flex flex-col items-center absolute text-sm  text-gray-600 uppercase ml-3">
+                               <h5>19 july</h5> 
+                               <h5>WED</h5>
+                            </div>
+                            
+                            <i class="fa-solid fa-ticket-simple text-6xl gradient-text"></i> <h3 class="ml-3">#enjoy #fun</h3>
+                        </div>
+                        <div class="text-container">
+                            <h4 class="text">Let's get this</h4>
+                        </div>
+                        <div class="text-lg tracking-wider	">
+                            <h5>Shironamhin & Artcel</h5>
+                        </div>
+                        <!-- <span></span> -->
+                        <!-- button -->
+                        <div>
+                            <button class="click p-2 w-[100px] mt-5 rounded-xl">Click here</button>
+                        </div>
+                       
+                    </div>  
+                    </div>
+                    
+                    <div class="w-full flex flex-col gap-5 mr-5">
+                        <h2 class="text-5xl letter text-gray-600 flex justify-end">L</h2>
+                        <h2 class="text-5xl letter text-gray-600 flex justify-end">E</h2>
+                        <h2 class="text-5xl letter text-gray-600 flex justify-end">T</h2>
+                        <h2 class="text-5xl letter text-gray-600 flex justify-end">S</h2>
+                        <h2 class="text-5xl letter text-gray-600 flex justify-end">R</h2>
+                        <h2 class="text-5xl letter text-gray-600 flex justify-end">O</h2>
+                        <h2 class="text-5xl letter text-gray-600 flex justify-end">C</h2>
+                        <h2 class="text-5xl letter text-gray-600 flex justify-end">k</h2>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="slider slider-two">
+            <div class="slider-image zoom-effect" style="background-image: url('./bannerimages/pexels-rahulp9800-1652353.jpg')">
+                <div class="image-wrapper"></div>
+                <div class="slider-text animate__animated animate__bounceInLeft">
+                    <div>
+                        <h1>logo</h1>
+                    </div>
+
+                    <div class="flex items-center gap-5 mt-10">
+                        <div class="flex flex-col items-center absolute ml-[4%] gap-2 text-gray-600 uppercase">
+                           <h5>21 july</h5> 
+                           <h5>Fri</h5>
+                        </div>
+                        
+                        <i class="fa-solid fa-ticket-simple text-8xl gradient-text"></i> <h3>#enjoy #fun</h3>
+                    </div>
+                    <div class="text-container">
+                        <h4 class="text">The mega event here</h4>
+                    </div>
+                    <div class="text-2xl tracking-wider	">
+                        <h5>Kanamachi</h5>
+                    </div>
+                    <!-- <span></span> -->
+                    <!-- button -->
+                    <div>
+                        <button class="click p-5 w-[150px] mt-5">Click here</button>
+                    </div>
+                    <div class="flex  gap-10 text-4xl w-12 text-center absolute left-[80%] mt-[8%] ">
+                        <i class="cursor-pointer fa-brands fa-square-facebook hover:text-blue-400"></i>
+                        <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
+                        <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider slider-three">
+            <div class="slider-image zoom-effect" style="background-image: url('./bannerimages/pexels-vishnurnair-1105666.jpg')">
+                <div class="image-wrapper"></div>
+                <div class="slider-text animate__animated animate__bounceInLeft">
+                    <div>
+                        <h1>logo</h1>
+                    </div>
+
+                    <div class="flex items-center gap-5 mt-10">
+                        <div class="flex flex-col items-center absolute ml-[4%] gap-2 text-gray-600 uppercase">
+                           <h5>25 july</h5> 
+                           <h5>Sun</h5>
+                        </div>
+                        
+                        <i class="fa-solid fa-ticket-simple text-8xl gradient-text"></i> <h3>#enjoy #fun</h3>
+                    </div>
+                    <div class="text-container">
+                        <h4 class="text">The great show</h4>
+                    </div>
+                    <div class="text-2xl tracking-wider	">
+                        <h5>Artcel</h5>
+                    </div>
+                    <!-- <span></span> -->
+                    <!-- button -->
+                    <div>
+                        <button class="click p-5 w-[150px] mt-5">Click here</button>
+                    </div>
+                    <div class="flex  gap-10 text-4xl w-12 text-center absolute left-[80%] mt-[8%] ">
+                        <i class="cursor-pointer fa-brands fa-square-facebook hover:text-blue-400"></i>
+                        <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
+                        <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="slider-button prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left-long"></i></button>
+        <button class="slider-button next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right-long"></i></button>
+    </div>
+    
+    
+
+    <!-- home banner slider end-->
+
+    <!-- video div  -->
+    <div class="md:flex" style="overflow: hidden;">
+
+        <div class="video-container md:w-[40%] w-full">
+            <video autoplay muted loop class="video-background " data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <source src="./videos/7586157-hd_1080_1920_24fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+
+
+        <div class="md:w-[60%] flex justify-center items-center text-center p-5 bg-section" data-aos="fade-left">
+            <div class="bg-overlay"></div>
+            <div class="content">
+                <h1 class="text-4xl mb-5">Tickely</h1>
+                <span class="span"></span>
+                <p class="mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus pariatur tempora
+                    consectetur facilis veniam totam, dolorem optio doloribus corporis rerum et perferendis iusto quae
+                    atque maxime odit molestias, ratione minima.</p>
+                <button class="click p-2 mt-5 rounded-lg">Buy Ticket</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- video div end -->
+
+    <!-- how to take events steps -->
+
+    <div class="mt-40 mb-40" style="overflow: hidden;">
+        <div class="flex justify-center mt-20 mb-28 text-5xl uppercase text-center" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+            <h1>Its Get Faster then you thoughts</h1>
+            <span class="icon-span"></span>
+        </div>
+        <div class="flex justify-center flex-col items-center "
+            style="background-image: url(./imagehere/process-top.png); background-repeat: no-repeat;background-size: contain; background-position: center;">
+            <div class=" w-[60%] md:flex items-center">
+                <img class="w-72" src="./imagehere/pngwing.com (7).png" alt="" data-aos="fade-right">
+                <div class="text-3xl font-bold">
+                    <h1 class="uppercase" data-aos="fade-left">1- Select your <span
+                            class="text-yellow-300">envent</span></h1>
+                </div>
+
+            </div>
+            <div class="mt-3">
+                <img src="./imagehere/process-line-1.png" alt="" data-aos="zoom-in">
+            </div>
+        </div>
+        <div class="flex justify-center flex-col items-center ">
+            <div class=" w-[60%] flex flex-col items-end">
+                <div class="md:flex items-center">
+                    <div class="text-3xl font-bold">
+                        <h1 class="uppercase" data-aos="fade-right">2- <span class="text-yellow-300">Register</span>with
+                            details</h1>
+                    </div>
+                    <img class="w-72 " src="./imagehere/pngwing.com (8).png" alt="" data-aos="fade-left">
+
+                </div>
+                <img class="w-28 mt-40" src="./imagehere/blob-1-opacity-58 (1).gif" alt=""
+                    style="position: absolute; right: 75%;">
+
+            </div>
+            <div class="mt-3">
+                <img src="./imagehere/process-line-32.png" alt="" data-aos="zoom-in">
+            </div>
+        </div>
+        <div class="flex justify-center flex-col items-center"
+            style="background-image: url(./imagehere/client-bg-1.png); background-repeat: no-repeat;background-size: cover; background-position: center;">
+            <div class=" w-[60%] md:flex items-center">
+                <img class="w-72" src="./imagehere/pngwing.com (9).png" alt="" data-aos="fade-right">
+                <div class="text-3xl font-bold">
+                    <h1 class="uppercase" data-aos="fade-left">3- easy <span class="text-yellow-300">pay</span></h1>
+                </div>
+
+            </div>
+            <div class="mt-3">
+                <img src="./imagehere/process-line-1.png" alt="" data-aos="zoom-in">
+            </div>
+        </div>
+        <div class="flex justify-center flex-col items-center ">
+            <div class=" w-[60%] flex flex-col items-end">
+                <div class="md:flex items-center">
+                    <div class="text-3xl font-bold">
+                        <h1 class="uppercase" data-aos="fade-right">4- <span class="text-yellow-300">enjoy</span> event
+                        </h1>
+                    </div>
+                    <img class="w-72 " src="./imagehere/pngwing.com (10).png" alt="" data-aos="fade-left">
+
+                </div>
+                <img class="w-96 right-[70%] md:right-[90%]" src="./imagehere/blob-1-opacity-58 (1).gif" alt=""
+                    style="position: absolute;">
+
+            </div>
+        </div>
+    </div>
+ <!-- how to take events steps end -->
+
+    
+    <!-- upcommig event -->
+    <div class="flex justify-center uppercase text-3xl font-bold mt-28">
+        <h1 data-aos="fade-right">upcommig event</h1>
+        <span class="mt-[10%] md:mt-[4%]" style="background: #f4f81f;
+        height: 3px;
+        width: 10%;
+        position: absolute;
+        "></span>
+    </div>
+    <div class="flex justify-center mt-20 mb-40" data-aos="fade-right">
+        <div class="flex flex-wrap gap-3 pl-0 md:pl-3 w-[89%]">
+            <div
+                class="card w-96 h-80 bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out cursor-pointer">
+                <img src="./bannerimages/pexels-mark-angelo-sampan-738078-1587927.jpg" alt="Card Image"
+                    class="card-img w-full h-full object-cover rounded-lg">
+                <div class="card-overlay absolute inset-0 opacity-0"></div>
+                <div class="absolute bottom-4 left-4 text-white text-xl font-bold z-10">Event Title</div>
+                <div class="card-button absolute inset-0 flex justify-center items-center">
+                    <button class="bg-yellow-300 text-black py-2 px-4 rounded-full">Buy Ticket</button>
+                </div>
+            </div>
+            <div
+                class="card w-96 h-80 bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out cursor-pointer">
+                <img src="./bannerimages/pexels-mark-angelo-sampan-738078-1587927.jpg" alt="Card Image"
+                    class="card-img w-full h-full object-cover rounded-lg">
+                <div class="card-overlay absolute inset-0 opacity-0"></div>
+                <div class="absolute bottom-4 left-4 text-white text-xl font-bold z-10">Event Title</div>
+                <div class="card-button absolute inset-0 flex justify-center items-center">
+                    <button class="bg-yellow-300 text-black py-2 px-4 rounded-full">Buy Ticket</button>
+                </div>
+            </div>
+            <div
+                class="card w-96 h-80 bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out cursor-pointer">
+                <img src="./bannerimages/pexels-mark-angelo-sampan-738078-1587927.jpg" alt="Card Image"
+                    class="card-img w-full h-full object-cover rounded-lg">
+                <div class="card-overlay absolute inset-0 opacity-0"></div>
+                <div class="absolute bottom-4 left-4 text-white text-xl font-bold z-10">Event Title</div>
+                <div class="card-button absolute inset-0 flex justify-center items-center">
+                    <button class="bg-yellow-300 text-black py-2 px-4 rounded-full">Buy Ticket</button>
+                </div>
+            </div>
+          
+         
+         
+            
+        </div>
+    </div>
+
+
+    <!-- gallary section -->
+    <div class="flex justify-center uppercase text-3xl font-bold">
+        <h1 data-aos="fade-right">gallery </h1>
+        <span class="mt-[10%] md:mt-[4%]" style="background: #f4f81f;
+        height: 3px;
+        width: 10%;
+        position: absolute;
+        "></span>
+    </div>
+
+    <div class="flex justify-center overflow-hidden" data-aos="fade-up">
+
+        <div class="container">
+            <img class="w-52 mt-40" src="./imagehere/blob-1-opacity-58 (1).gif" alt=""
+                style="position: absolute; right: 96%;">
+            <img class="w-96 mb-40" src="./imagehere/blob-1-opacity-58 (1).gif" alt=""
+                style="position: absolute; left: 94%;">
+            <div class="gallery">
+                <a href="./gallary/1.jpg" data-lightbox="models" data-title="Caption1" class="relative group">
+                    <img src="./gallary/1.jpg" alt="" class="transition-opacity duration-300 group-hover:opacity-50">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                        <span class="text-white text-lg">Click it</span>
+                    </div>
+                </a>
+                <a href="./gallary/2.jpg" data-lightbox="models" data-title="Caption1" class="relative group">
+                    <img src="./gallary/2.jpg" alt="" class="transition-opacity duration-300 group-hover:opacity-50">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                        <span class="text-white text-lg">Click it</span>
+                    </div>
+                </a>
+                <a href="./gallary/3.jpg" data-lightbox="models" data-title="Caption1" class="relative group">
+                    <img src="./gallary/3.jpg" alt="" class="transition-opacity duration-300 group-hover:opacity-50">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                        <span class="text-white text-lg">Click it</span>
+                    </div>
+                </a>
+                <a href="./gallary/4.jpg" data-lightbox="models" data-title="Caption1" class="relative group">
+                    <img src="./gallary/4.jpg" alt="" class="transition-opacity duration-300 group-hover:opacity-50">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                        <span class="text-white text-lg">Click it</span>
+                    </div>
+                </a>
+                <a href="./gallary/5.jpg" data-lightbox="models" data-title="Caption1" class="relative group">
+                    <img src="./gallary/5.jpg" alt="" class="transition-opacity duration-300 group-hover:opacity-50">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                        <span class="text-white text-lg">Click it</span>
+                    </div>
+                </a>
+                <a href="./gallary/6.jpg" data-lightbox="models" data-title="Caption1" class="relative group">
+                    <img src="./gallary/6.jpg" alt="" class="transition-opacity duration-300 group-hover:opacity-50">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                        <span class="text-white text-lg">Click it</span>
+                    </div>
+                </a>
+                <a href="./gallary/7.jpg" data-lightbox="models" data-title="Caption1" class="relative group">
+                    <img src="./gallary/7.jpg" alt="" class="transition-opacity duration-300 group-hover:opacity-50">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                        <span class="text-white text-lg">Click it</span>
+                    </div>
+                </a>
+                <a href="./gallary/8.jpg" data-lightbox="models" data-title="Caption1" class="relative group">
+                    <img src="./gallary/8.jpg" alt="" class="transition-opacity duration-300 group-hover:opacity-50">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                        <span class="text-white text-lg">Click it</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="footer bg-footer text-base-content items-center pl-[12%] h-[70vh]">
+
+        <aside>
+            <div>
+                <h1 class="text-5xl">logo</h1>
+            </div>
+            <p>
+                ACME Industries Ltd.
+                <br />
+                Providing reliable tech since 1992
+            </p>
+        </aside>
+        <nav>
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+    </footer>
+
+
+    <!-- script tag -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+
+        // Load navbar
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('navbarContainer').innerHTML = data;
+        });
+        // load navbar end
+
+        // banner slider 
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider');
+        const totalSlides = slides.length;
+        const slideInterval = 600000; // 3 seconds for each slide
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('slider-active');
+                if (i === index) {
+                    slide.classList.add('slider-active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Automatic slide change
+        setInterval(nextSlide, slideInterval);
+
+        // Initialize
+        showSlide(currentSlide);
+
+        // banner slider end-----------
+
+        // aos animation ----
+
+        AOS.init();
+
+        // aos animation end ----
+    </script>
+
+    <!-- jquery -->
+    <script src="./javascript/lightbox-plus-jquery.js"></script>
+</body>
+
+</html>

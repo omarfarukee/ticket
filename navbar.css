@@ -1,0 +1,37 @@
+/* for navbar scroll */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s;
+    z-index: 1000;
+    background-color: transparent;
+    font-family: sans-serif;
+}
+.navbar.scrolled {
+    background-color: #0f0f0e;
+}
+.nav-menu a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.nav-logo img {
+    width: 100px;
+}
+
+.login-button{
+    background-color: #f4f81f;
+    color:#000;
+}
+.login-button:hover{
+    background-color: #c9cc2c;
+    transition: 0.3s;
+}

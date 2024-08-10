@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="black">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <!-- cdn link & script -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+    <!-- custom css -->
+
+
+    <!-- custom js -->
+    <script src="./javascript/navbarScroll.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div id="navbarContainer"></div>
+    <!-- navbar end -->
+
+    <!-- event card -->
+    <div class="flex justify-center bg-blog pt-20">
+        <div class="flex flex-wrap md:gap-10 gap-5 justify-center">
+            <div class="card w-[90%] md:w-[500px] shadow-2xl rounded-2xl mb-5">
+                <figure>
+                    <img src="https://groupgordon.com/wp-content/uploads/2022/04/Messe_Luzern_Corporate_Event.jpg"
+                        alt="Shoes" class="" />
+                </figure>
+                <div class="card-body text-white">
+                    <h2 class="card-title">
+                        New event
+                        <div class="badge badge-secondary">NEW</div>
+                    </h2>
+                    <p>If a dog chews shoes whose shoes does he choose? Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Suscipit, eligendi?...</p>
+                    <div class="card-actions justify-between items-center">
+                        <div class="flex flex-col gap-2">
+                            <div class="badge badge-outline p-3"><i
+                                    class="fa-solid fa-location-dot mr-1 animate-bounce"></i> Dhaka, block2,d</div>
+                            <div class="badge badge-outline p-3"><i class="fa-solid fa-clock mr-1"></i> 5.30 pm</div>
+                        </div>
+
+                        <div>
+                            <a href="eventDetails.html">
+                                <p class="hover:border-b cursor-pointer">Read more <i
+                                        class="fa-solid fa-arrow-right"></i></p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card w-[90%] md:w-[500px] shadow-2xl rounded-2xl mb-5">
+                <figure>
+                    <img src="https://groupgordon.com/wp-content/uploads/2022/04/Messe_Luzern_Corporate_Event.jpg"
+                        alt="Shoes" class="" />
+                </figure>
+                <div class="card-body text-white">
+                    <h2 class="card-title">
+                        New event
+                        <div class="badge badge-secondary">NEW</div>
+                    </h2>
+                    <p>If a dog chews shoes whose shoes does he choose? Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Suscipit, eligendi?...</p>
+                    <div class="card-actions justify-between items-center">
+                        <div class="flex flex-col gap-2">
+                            <div class="badge badge-outline p-3"><i
+                                    class="fa-solid fa-location-dot mr-1 animate-bounce"></i> Dhaka, block2,d</div>
+                            <div class="badge badge-outline p-3"><i class="fa-solid fa-clock mr-1"></i> 5.30 pm</div>
+                        </div>
+
+                        <div>
+                            <a href="eventDetails.html">
+                                <p class="hover:border-b cursor-pointer">Read more <i
+                                        class="fa-solid fa-arrow-right"></i></p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- script tag -->
+    <script>
+        // Load navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbarContainer').innerHTML = data;
+            });
+        // load navbar end
+        AOS.init();
+    </script>
+
+
+
+
+</body>
+
+</html>

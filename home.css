@@ -1,0 +1,386 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* slider css */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider-active {
+    opacity: 1;
+}
+
+.slider-video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.slider-image, .slider-video {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-image::before, .slider-video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.slider-image , .slider-video  {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    /* animation: zoom-out 24s infinite; */
+}
+
+.slider-text {
+    position: absolute;
+    top: 15%;
+    color: #ffffff;
+    width: 100%;
+    text-transform: capitalize;
+    z-index: 2;
+}
+
+.slider-text h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.slider-text p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 30px;
+}
+
+.slider-text span {
+    background: #f4f81f;
+    height: 5px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+.slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.slider-button.prev {
+    left: 10px;
+    border-radius: 5px;
+}
+.slider-button.next {
+    right: 10px;
+    border-radius: 5px;
+}
+
+/* Keyframes for zoom-out effect */
+@keyframes zoom-out {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply the zoom-out animation to the image wrapper of the last two slides */
+.slider-two .image-wrapper,
+.slider-three .image-wrapper {
+    animation: zoom-out 24s infinite;
+}
+
+
+/* animated text */
+.text-container{
+    display: inline-block;
+}
+.text{
+    font-size: 4em;
+    letter-spacing: 5px;
+    border-right: 5px solid ;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(163, 156, 156);
+    animation: 
+        typing 2s steps(15),
+        cursor .4s step-end infinite alternate;
+        transition: 0.3s;
+}
+.text:hover{
+    color: #f4f81f;
+    
+}
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing{
+    from {
+        width: 0;
+    }
+}
+/* gardient icon color */
+.gradient-text {
+    background: linear-gradient(135deg, #FCE31F, #FFF59E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* button banner */
+
+.click{
+    border: 2px solid yellow;  
+    transition: 0.6s;
+}
+
+.click:hover{
+    background: linear-gradient(135deg, #FCE31F, #FFF59E);
+    color: #000;
+    height: 100%;
+}
+
+/* div 2 */
+.ticket {
+    position: relative;
+}
+
+.ticket .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.ticket .content {
+    position: relative;
+    z-index: 2;
+}
+
+.ticket h1,
+.ticket p,
+.ticket button {
+    position: relative;
+    z-index: 2;
+}
+
+.span {
+    background: #f4f81f;
+    height: 5px;
+    width: 200px;
+    position: absolute;
+    left: 37%;
+}
+
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 40%; /* Adjust as necessary */
+    height: 120vh; /* Adjust as necessary */
+}
+
+.video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+.bg-footer{
+    border-top:2px solid #c9cc2c;
+}
+
+/* how to get event */
+
+.icon{
+    color: #f4f81f;
+
+}
+.icon-span{
+    background: #f4f81f;
+    height: 3px;
+    width: 40%;
+    position: absolute;
+    top:120%;
+}
+.gallary-span{
+    background: #f4f81f;
+    height: 3px;
+    width: 10%;
+    position: absolute;
+    margin-top: 4%;
+}
+/* gif backgorund  */
+.bg-section {
+    position: relative;
+    background: url('./videos/output-onlinegiftools\ \(29\).gif') no-repeat center center/cover;
+    color: #fff;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Adjust the opacity as needed */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+/* custom scroll bar */
+
+
+
+@media (max-width: 768px) {
+
+    .slider-text {
+        position: absolute;
+        color: #ffffff;
+        width:80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .slider-text h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+    .slider-text p {
+        font-size: 14px;
+        line-height: 28px;
+        margin-top: 30px;
+        
+    }
+    .slider-text span{
+        top: 30%;
+        left: 20%;
+    }
+    .span {
+        background: #f4f81f;
+        height: 5px;
+        width: 200px;
+        position: absolute;
+        left: 20%;
+    }
+    /* slider text */
+    .text{
+        font-size: 2em;
+        letter-spacing: 0px;
+    }
+    .slider-text span {
+        background: #f4f81f;
+        height: 5px;
+        width: 200px;
+        position: absolute;
+        left: 17%;
+        top: 20%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(236, 236, 15); /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(236, 236, 45); /* Color when hovering over the scrollbar thumb */
+}

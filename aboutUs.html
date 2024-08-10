@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="black">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- custom js  -->
+    <script src="./javascript/navbarScroll.js"></script>
+    <!-- custom css -->
+    <style>
+        .video-container-contact {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 80vh;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+        }
+
+        .video-background-contact {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .video-overlay-contact {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 2;
+        }
+
+        .video-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            z-index: 3;
+            text-align: center;
+            width: 60%;
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: auto;
+            z-index: 2;
+            bottom: -1px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div id="navbarContainer"></div>
+    <!-- navbar end -->
+
+
+    <!-- top hero section -->
+    <div class="video-container-contact">
+        <video autoplay muted loop class="video-background-contact">
+            <!-- Test with a known working video URL -->
+            <source src="./videos/about us.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay-contact"></div>
+        <div class="video-text">
+            <div>
+                <h1 class="md:text-6xl text-3xl font-bold mb-5 uppercase animate__animated animate__bounceInRight" style="color: yellow; letter-spacing: 10px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">About us</h1>
+            </div>
+        </div>
+    </div>
+<!-- detais info -->
+
+<div class="mt-20 mb-40">
+    <h1 class="md:text-8xl text-4xl md:w-[40%] w-[60%] md:ml-[15%] ml-5" style="border-bottom: 4px solid yellow;" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+        Our Vision
+    </h1>
+    
+    <p class="text-lg md:w-[40%] md:ml-[20%] mt-16 border-l pl-2 w-[90%] ml-5"  data-aos="fade-up"
+    data-aos-duration="3000">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur vero tempora ab quas! Dolores, doloremque praesentium assumenda quisquam numquam optio. Itaque nemo vero minus numquam, corrupti veniam magnam maiores vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod inventore saepe possimus odit est, animi voluptatibus ducimus laudantium mollitia provident, sit a culpa tempore voluptatem libero sunt delectus? Esse?
+    </p>
+</div>
+
+<div class="mb-20 overflow-hidden" >
+    <div class="flex gap-2">
+        <img class="w-[50%] rounded" src="./aboutpageimg/aboutpage1.jpg" alt="" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+        <img class="w-[30%] rounded" src="./aboutpageimg/aboutpage2.jpg" alt="" data-aos="fade-up"
+        data-aos-duration="3000">
+        <div class="">
+            <img class="rounded-md mb-2" src="./aboutpageimg/pexels-brett-sayles-11893153.jpg" alt="" data-aos="zoom-in-left">
+            <img class="rounded-md mb-2" src="./aboutpageimg/pexels-thehumantra-13517461.jpg" alt=""  data-aos="zoom-in-left">
+            <img class="rounded-md " src="./aboutpageimg/pexels-faruktokluoglu-10063139.jpg" alt=""   data-aos="zoom-in-left">
+        </div>
+    </div>
+    
+        
+</div>
+
+<div class="mt-20" style="background-image: url(./imagehere/182428240217.jpg); background-repeat: no-repeat;background-size: cover; height: 100vh;">
+    <div class="flex justify-end text-end md:mr-[10%]">
+        <h1 class="md:text-8xl md:w-[40%] text-4xl mr-5" style="border-bottom: 4px solid yellow;" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+        Our Values
+    </h1>
+     
+    </div>
+   <div class="flex flex justify-end text-end md:mr-[15%] mr-5">
+    <p class="text-lg md:w-[40%] md:mr-[5%] mt-16 border-r pr-2"  data-aos="fade-up"
+    data-aos-duration="3000">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur vero tempora ab quas! Dolores, doloremque praesentium assumenda quisquam numquam optio. Itaque nemo vero minus numquam, corrupti veniam magnam maiores vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod inventore saepe possimus odit est, animi voluptatibus ducimus laudantium mollitia provident, sit a culpa tempore voluptatem libero sunt delectus? Esse?
+    </p>
+   </div>
+    
+</div>
+
+
+<div class="" style="background-image: url(./imagehere/840843081452.jpg); background-repeat: no-repeat;background-size: cover; height: 100vh;">
+    <h1 class="md:text-8xl text-4xl md:w-[40%] w-[60%] md:ml-[15%] ml-5" style="border-bottom: 4px solid yellow;" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+        Our Mision
+    </h1>
+    
+    <p class="text-lg md:w-[40%] md:ml-[20%] mt-16 border-l pl-2 w-[90%] ml-5"  data-aos="fade-up"
+    data-aos-duration="3000">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur vero tempora ab quas! Dolores, doloremque praesentium assumenda quisquam numquam optio. Itaque nemo vero minus numquam, corrupti veniam magnam maiores vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod inventore saepe possimus odit est, animi voluptatibus ducimus laudantium mollitia provident, sit a culpa tempore voluptatem libero sunt delectus? Esse?
+    </p>
+</div>
+    <script>
+        // Load navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbarContainer').innerHTML = data;
+            });
+        // load navbar end
+        AOS.init();
+    </script>
+</body>
+
+</html>
