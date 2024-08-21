@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="black">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <!-- cdn link & script -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- custom js -->
+    <script src="./javascript/navbarScroll.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Oxanium:wght@200..800&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap');
+
+        body {
+            font-family: "Oxanium", sans-serif;
+        }
+
+        .checkout {
+            transition: 0.4s;
+            border: 1px solid #f4f81f;
+        }
+
+        .checkout:hover {
+            background: #f4f81f;
+            color: #000;
+        }
+        .pay{
+            transition: 0.4s;
+            background: #c7c7b48a;
+        }
+        .pay:hover {
+            background: #d3d3938a;
+        }
+        /* select home delivary */
+    .hidden {
+      display: none;
+    }
+    .slide-up {
+      transition: all 0.5s ease-in-out;
+      max-height: 0;
+      overflow: hidden;
+    }
+    .slide-up.open {
+      max-height: 230px;
+      width: 100%;
+      
+    }
+    /* loader */
+    .loader {
+        transform: rotateZ(45deg);
+        perspective: 1000px;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        color: #fff;
+      }
+        .loader:before,
+        .loader:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: inherit;
+          height: inherit;
+          border-radius: 50%;
+          transform: rotateX(70deg);
+          animation: 1s spin linear infinite;
+        }
+        .loader:after {
+          color: #f8d40a;
+          transform: rotateY(70deg);
+          animation-delay: .4s;
+        }
+
+      @keyframes rotate {
+        0% {
+          transform: translate(-50%, -50%) rotateZ(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotateZ(360deg);
+        }
+      }
+
+      @keyframes rotateccw {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(-360deg);
+        }
+      }
+
+      @keyframes spin {
+        0%,
+        100% {
+          box-shadow: .2em 0px 0 0px currentcolor;
+        }
+        12% {
+          box-shadow: .2em .2em 0 0 currentcolor;
+        }
+        25% {
+          box-shadow: 0 .2em 0 0px currentcolor;
+        }
+        37% {
+          box-shadow: -.2em .2em 0 0 currentcolor;
+        }
+        50% {
+          box-shadow: -.2em 0 0 0 currentcolor;
+        }
+        62% {
+          box-shadow: -.2em -.2em 0 0 currentcolor;
+        }
+        75% {
+          box-shadow: 0px -.2em 0 0 currentcolor;
+        }
+        87% {
+          box-shadow: .2em -.2em 0 0 currentcolor;
+        }
+      }
+   
+    </style>
+</head>
+
+<body onload='LoaderFunction()'>
+    <!-- loader -->
+    <div class="fixed inset-0 flex items-center justify-center bg-transparent backdrop-blur-lg" id="loader-container">
+        <div class="loader">
+          <span class="loader"></span>
+        </div>
+      </div>
+          <!-- loader -->
+     <!-- navbar -->
+     <div id="navbarContainer" class="hidden md:block"></div>
+     <!-- bottom navbar -->
+     <div id="bottomNavbar" class="md:hidden block"></div>
+     <!-- navbar end -->
+
+    <!-- banner section -->
+    <div>
+        <div class="flex justify-center mt-40 md:text-5xl">
+            <div class="cssanimation lePeek sequence uppercase mb-8 w-[80%] text-center leading-[40px] md:leading-[60px]">BSides Cox's Bazar (International Cybersecurity Conference)
+            </div>
+        </div>
+        <div class="flex justify-center animate__animated animate__backInLeft">
+            <img class="w-[80%] rounded-xl"
+                src="https://img.freepik.com/free-psd/horizontal-banner-template-professional-business-event_23-2149313272.jpg"
+                alt="">
+        </div>
+
+    </div>
+    <!-- banner section end-->
+     <div class="mt-20 mb-5">
+        <div class="flex gap-4 items-center ml-[3%]" >
+            <p class="h-20 w-[5px] rounded bg-[#fbff00]"></p>
+            <h1 class="text-5xl">Event Description</h1>
+        </div>
+     </div>
+
+     <!-- description -->
+    <div class=" px-3 md:px-10 md:flex gap-5 mb-20">
+        <div class="md:w-[55%] ">
+            <p>
+                "This is the fight of our lives, and we're going to win. Whatever it takes." We're all very familiar
+                with
+                this line, ain't we? Yes! It's about that group of extraordinary individuals who were assembled to fight
+                against the enslavement of humanity.
+
+
+
+                From the youngest to the eldest, man to woman, every fiction lover is acquainted with the word 𝗧𝗵𝗲
+                𝗔𝘃𝗲𝗻𝗴𝗲𝗿𝘀. Growing up watching Marvel was an emotion, but deep down, at least for a single
+                moment,
+                everyone wanted to live those emotions, that suspense, that enthusiasm in reality.
+
+
+
+                What if you were given the chance to experience these in your lifetime ? Imagine you were given the
+                chance
+                to experience 𝗧𝗵𝗲 𝗔𝘃𝗲𝗻𝗴𝗲𝗿𝘀 and all the historical epic moments that you could only envision?
+                Consider if you were given the chance to rub shoulders with legendary characters of 𝗧𝗵𝗲
+                𝗔𝘃𝗲𝗻𝗴𝗲𝗿𝘀
+                ?
+
+
+
+                We're dedicated to turning your aspirations into reality with unwavering commitment. Whether you're a
+                die-hard fan or a casual enthusiast, "𝗙𝗔𝗡𝗗𝗢𝗠 𝗫" has something special.
+
+
+
+                Join us at "𝗙𝗔𝗡𝗗𝗢𝗠 𝗫" presents "𝗔𝗩𝗘𝗡𝗚𝗘𝗥𝗦𝗖𝗢𝗡", where fans of all ages can immerse
+                themselves in the world of earth's mightiest heroes. Experience the thrill of meeting fellow
+                enthusiasts,
+                and exploring exclusive exhibits showcasing iconic props and costumes from the Marvel Cinematic
+                Universe.
+                Assemble with peers aficionados for an immersive unique unrivalled experience. From thrilling panels
+                featuring special guests to interactive experiences that bring your favorite characters to life,
+                "𝗔𝗩𝗘𝗡𝗚𝗘𝗥𝗦𝗖𝗢𝗡" offers an unforgettable opportunity to celebrate the legacy and impact of
+                𝗧𝗵𝗲
+                𝗔𝘃𝗲𝗻𝗴𝗲𝗿𝘀. Don't miss your chance to be a part of this grand festive, where every moment is an
+                epic
+                adventure!
+            </p>
+        </div>
+
+        <div class="md:w-[45%] rounded-xl bg-[#0a1116] pb-5" >
+            <div>
+                <div class="text-3xl flex justify-center mt-5 pt-5 md:pt-0">
+                    <h1>Buy Your <span class="text-[#f4f81f] font-bold">Best</span> One <i class="fa-solid fa-clipboard-list"></i></h1>
+                </div>
+                <div class="px-2 md:px-10 mt-5 ">
+                    <div
+                        class="border mb-3  border-[#f4f81f] shadow-md shadow-[#f4f81f73] h-20 flex items-center  rounded-xl">
+                        <h1 class="md:w-[50%] w-[40%] ml-3"><i class="fa-solid fa-ticket text-[#f4f81f]"></i> Basic Ticket</h1>
+                        <div class="flex items-center gap-2 w-[30%] mr-2 md:mr-0">
+                            <button> <i class="fa-solid fa-minus"></i></button>
+                            <p class="border w-20 flex justify-center rounded">1</p>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <div
+                            class="md:w-[20%] w-[25%] flex justify-center h-full items-center rounded-tr-xl rounded-br-xl bg-[#f4f81f4f]">
+                            <h1>BDT 400</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="border mb-3  border-[#f4f81f] shadow-md shadow-[#f4f81f73] h-20 flex items-center  rounded-xl">
+                        <h1 class="md:w-[50%] w-[40%] ml-3"><i class="fa-solid fa-ticket text-[#f4f81f]"></i> Basic Ticket</h1>
+                        <div class="flex items-center gap-2 w-[30%] mr-2 md:mr-0">
+                            <button> <i class="fa-solid fa-minus"></i></button>
+                            <p class="border w-20 flex justify-center rounded">1</p>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <div
+                            class="md:w-[20%] w-[25%] flex justify-center h-full items-center rounded-tr-xl rounded-br-xl bg-[#f4f81f4f]">
+                            <h1>BDT 400</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="border mb-3  border-[#f4f81f] shadow-md shadow-[#f4f81f73] h-20 flex items-center  rounded-xl">
+                        <h1 class="md:w-[50%] w-[40%] ml-3"><i class="fa-solid fa-ticket text-[#f4f81f]"></i> Basic Ticket</h1>
+                        <div class="flex items-center gap-2 w-[30%] mr-2 md:mr-0">
+                            <button> <i class="fa-solid fa-minus"></i></button>
+                            <p class="border w-20 flex justify-center rounded">1</p>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <div
+                            class="md:w-[20%] w-[25%] flex justify-center h-full items-center rounded-tr-xl rounded-br-xl bg-[#f4f81f4f]">
+                            <h1>BDT 400</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="border mb-3  border-[#f4f81f] shadow-md shadow-[#f4f81f73] h-20 flex items-center  rounded-xl">
+                        <h1 class="md:w-[50%] w-[40%] ml-3"><i class="fa-solid fa-ticket text-[#f4f81f]"></i> Basic Ticket</h1>
+                        <div class="flex items-center gap-2 w-[30%] mr-2 md:mr-0">
+                            <button> <i class="fa-solid fa-minus"></i></button>
+                            <p class="border w-20 flex justify-center rounded">1</p>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <div
+                            class="md:w-[20%] w-[25%] flex justify-center h-full items-center rounded-tr-xl rounded-br-xl bg-[#f4f81f4f]">
+                            <h1>BDT 400</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="border mb-3  border-[#f4f81f] shadow-md shadow-[#f4f81f73] h-20 flex items-center  rounded-xl">
+                        <h1 class="md:w-[50%] w-[40%] ml-3"><i class="fa-solid fa-ticket text-[#f4f81f]"></i> Basic Ticket</h1>
+                        <div class="flex items-center gap-2 w-[30%] mr-2 md:mr-0">
+                            <button> <i class="fa-solid fa-minus"></i></button>
+                            <p class="border w-20 flex justify-center rounded">1</p>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <div
+                            class="md:w-[20%] w-[25%] flex justify-center h-full items-center rounded-tr-xl rounded-br-xl bg-[#f4f81f4f]">
+                            <h1>BDT 400</h1>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="p-4 border-b">
+                <div class="  mb-4 text-center"> <h1 class="text-2xl font-bold">Home Delivery </h1><small>( Delivery is only available inside dhaka ) <i class="fa-solid fa-triangle-exclamation text-[yellow]"></i></small></div>
+                
+                <div class="flex justify-evenly">
+                  <div class="flex gap-3 items-center">
+                    <p>No</p>  
+                    <input type="checkbox" id="noCheckbox" checked="checked" class="checkbox"/>
+                  </div>
+                  <div class="flex gap-3 items-center">
+                    <p>Yes</p>  
+                    <input type="checkbox" id="yesCheckbox" class="checkbox"/>
+                  </div>
+                </div>
+                <div id="addressBox" class="slide-up hidden mt-4 ">
+                    <div class="w-full justify-center text-center ">
+                        <label for="address" class="block text-sm font-medium">Please give your address:</label>
+                        <select class="select select-warning w-72 mt-3 rounded-lg">
+                          <option disabled selected>Select city</option>
+                          <option>Cheese</option>
+                          <option>Veggie</option>
+                        </select>
+                        <input type="text" placeholder="Write address" id="address" class=" p-2 border border-gray-300 rounded-md w-72 h-20 mt-3"/>
+                    </div>
+                 
+                </div>
+              </div>
+            <div class=" flex flex-col items-end pr-[10%] border-b-2 py-3">
+                <h1><i class="fa-solid fa-cart-plus"></i> Subtotal: 2000 BDT</h1>
+                <h1><i class="fa-solid fa-dolly"></i> Shipinng Fee: 100 BDT</h1>
+                <h1 class="text-[#f4f81f]"><i class="fa-solid fa-hand-holding-dollar"></i> Grand Total: 2100 BDT</h1>
+            </div>
+            <div class="flex justify-center mt-5">
+             <button class="checkout px-3 py-2 rounded-lg" onclick="my_modal_4.showModal()">Proceed To Checkout <i
+                        class="fa-solid fa-credit-card"></i></button>
+            </div>
+        </div>
+    </div>
+
+<!-- The button to open modal -->
+
+<dialog id="my_modal_4" class="modal bg-transparent backdrop-blur-sm ">
+    <div class="modal-box md:w-[550px] max-w-5xl">
+        <h3 class="text-lg font-bold text-center text-[#f4f81f] mb-5">Pay with</h3>
+        <div class="items-center gird text-center justify-between">
+            <button class=" md:h-28 h-[70px] rounded-md pay"><img class="md:w-36 w-24" src="./paylogo/496-4962280_nagad-logo-transparent-bkash-logo-png-png-download-removebg-preview.png" alt="">
+            </button>
+    
+            <button class=" md:h-28 h-[70px] pay rounded-md"><img class="md:w-36 w-24" src="./paylogo/images-removebg-preview.png" alt=""></button>
+    
+            <button class="md:h-28 h-[70px] pay rounded-md"><img class="md:w-36 w-24" src="./paylogo/images__1_-removebg-preview.png" alt=""></button>
+        </div>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+    <!-- script tag -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+    <script>
+        // Load navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbarContainer').innerHTML = data;
+            });
+             // load bottom navabr
+        fetch('bottomNavbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('bottomNavbar').innerHTML = data;
+            });
+        // load navbar end
+        AOS.init();
+
+        // check box 
+        const noCheckbox = document.getElementById('noCheckbox');
+    const yesCheckbox = document.getElementById('yesCheckbox');
+    const addressBox = document.getElementById('addressBox');
+
+    yesCheckbox.addEventListener('change', () => {
+      if (yesCheckbox.checked) {
+        noCheckbox.checked = false;
+        addressBox.classList.remove('hidden');
+        addressBox.classList.add('slide-up', 'open');
+      } else {
+        addressBox.classList.remove('slide-up', 'open');
+        addressBox.classList.add('hidden');
+      }
+    });
+
+    noCheckbox.addEventListener('change', () => {
+      if (noCheckbox.checked) {
+        yesCheckbox.checked = false;
+        addressBox.classList.remove('slide-up', 'open');
+        addressBox.classList.add('hidden');
+      }
+    });
+     // loader
+     document.addEventListener('DOMContentLoaded', function() {
+            const preloader = document.getElementById('loader-container');
+            function LoaderFunction() {
+                setTimeout(function() {
+                    preloader.style.display = 'none';
+                }, 1000);
+            }
+        
+            window.addEventListener('load', function() {
+                LoaderFunction();
+            });
+        });
+        // loader end
+    </script>
+
+</body>
+
+</html>

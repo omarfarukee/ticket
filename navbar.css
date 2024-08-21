@@ -1,7 +1,9 @@
 /* for navbar scroll */
-
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Oxanium:wght@200..800&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap');
 
 .navbar {
+    font-family: "Oxanium", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,10 +14,10 @@
     transition: background-color 0.3s;
     z-index: 1000;
     background-color: transparent;
-    font-family: sans-serif;
 }
 .navbar.scrolled {
     background-color: #0f0f0e;
+ 
 }
 .nav-menu a {
     text-decoration: none;
@@ -27,11 +29,22 @@
     width: 100px;
 }
 
-.login-button{
+/* .login-button{
     background-color: #f4f81f;
     color:#000;
 }
 .login-button:hover{
     background-color: #c9cc2c;
     transition: 0.3s;
+} */
+
+.login-button{
+    border: 1.2px solid yellow;  
+    transition: 0.6s;
+}
+
+.login-button:hover{
+    background: linear-gradient(135deg, #FCE31F, #FFF59E);
+    color: #000;
+    height: 100%;
 }

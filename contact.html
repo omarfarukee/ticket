@@ -85,12 +85,96 @@
             position: relative;
             z-index: 1;
         }
+                /* loader */
+                .loader {
+        transform: rotateZ(45deg);
+        perspective: 1000px;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        color: #fff;
+      }
+        .loader:before,
+        .loader:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: inherit;
+          height: inherit;
+          border-radius: 50%;
+          transform: rotateX(70deg);
+          animation: 1s spin linear infinite;
+        }
+        .loader:after {
+          color: #f8d40a;
+          transform: rotateY(70deg);
+          animation-delay: .4s;
+        }
+
+      @keyframes rotate {
+        0% {
+          transform: translate(-50%, -50%) rotateZ(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotateZ(360deg);
+        }
+      }
+
+      @keyframes rotateccw {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(-360deg);
+        }
+      }
+
+      @keyframes spin {
+        0%,
+        100% {
+          box-shadow: .2em 0px 0 0px currentcolor;
+        }
+        12% {
+          box-shadow: .2em .2em 0 0 currentcolor;
+        }
+        25% {
+          box-shadow: 0 .2em 0 0px currentcolor;
+        }
+        37% {
+          box-shadow: -.2em .2em 0 0 currentcolor;
+        }
+        50% {
+          box-shadow: -.2em 0 0 0 currentcolor;
+        }
+        62% {
+          box-shadow: -.2em -.2em 0 0 currentcolor;
+        }
+        75% {
+          box-shadow: 0px -.2em 0 0 currentcolor;
+        }
+        87% {
+          box-shadow: .2em -.2em 0 0 currentcolor;
+        }
+      }
+   
     </style>
 </head>
 
-<body>
+<body onload='LoaderFunction()'>
+    <!-- loader -->
+    <div class="fixed inset-0 flex items-center justify-center bg-transparent backdrop-blur-lg"
+        id="loader-container">
+        <div class="loader">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <!-- loader -->
     <!-- navbar -->
-    <div id="navbarContainer"></div>
+    <div id="navbarContainer" class="hidden md:block"></div>
+    <!-- bottom navbar -->
+    <div id="bottomNavbar" class="md:hidden block"></div>
     <!-- navbar end -->
 
     <div class="md:flex" style="overflow: hidden;">
@@ -144,7 +228,8 @@
                         </svg>
                         <input type="text" class="grow" placeholder="Email" />
                     </label>
-                    <textarea class="textarea textarea-bordered h-52 rounded-lg bg-transparent" placeholder="Write you message ..."></textarea>
+                    <textarea class="textarea textarea-bordered h-52 rounded-lg bg-transparent"
+                        placeholder="Write you message ..."></textarea>
                     <button class="btn btn-outline btn-warning rounded-lg">Send</button>
                 </form>
             </div>
@@ -159,7 +244,27 @@
             .then(data => {
                 document.getElementById('navbarContainer').innerHTML = data;
             });
+        fetch('bottomNavbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('bottomNavbar').innerHTML = data;
+            });
         // load navbar end
+        // load navbar end
+        // loader
+        document.addEventListener('DOMContentLoaded', function () {
+            const preloader = document.getElementById('loader-container');
+            function LoaderFunction() {
+                setTimeout(function () {
+                    preloader.style.display = 'none';
+                }, 1000);
+            }
+
+            window.addEventListener('load', function () {
+                LoaderFunction();
+            });
+        });
+        // loader end
     </script>
 </body>
 

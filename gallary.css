@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 3%;
+    /* padding: 50px 3%; */
 }
 .gallery{
     display: grid;
@@ -16,5 +16,5 @@
 }
 .gallery img{
     width: 100%;
-    border: 2px solid #f4f81f;
+    /* border: 2px solid #f4f81f; */
 }
