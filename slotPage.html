@@ -19,6 +19,15 @@
     <script src="./javascript/navbarScroll.js"></script>
     <!-- custom css -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Oxanium:wght@200..800&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Oxanium", sans-serif;
+        }
+
         .video-container-contact {
             position: relative;
             overflow: hidden;
@@ -179,12 +188,20 @@
                 box-shadow: .2em -.2em 0 0 currentcolor;
             }
         }
+
+        @media (max-width: 768px) {
+            .b{
+                font-size: 12px;
+                border-radius: 5px;
+            }
+        }
     </style>
 </head>
 
 <body onload='LoaderFunction()'>
     <!-- loader -->
-    <div class="fixed inset-0 flex items-center justify-center bg-transparent backdrop-blur-lg" id="loader-container">
+    <div class="fixed inset-0 z-10 flex items-center justify-center bg-transparent backdrop-blur-lg"
+        id="loader-container">
         <div class="loader">
             <span class="loader"></span>
         </div>
@@ -230,7 +247,7 @@
                                 class="border bg-transparent md:w-40 w-full  rounded-xl py-3 px-3 leading-tight focus:outline-none focus:shadow-outline">
                         </div>
                         <button type="submit" class="btn btn-outline btn-warning  rounded-xl md:w-40 w-full">Search <i
-                                class="fa-solid fa-magnifying-glass mb-5 md:mb-0"></i></button>
+                                class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </form>
             </div>
@@ -280,25 +297,25 @@
             <div class="w-full mt-12 md:mt-0">
                 <form class="md:flex h-full items-center">
                     <div
-                        class="flex flex-wrap justify-center p-3 gap-3 border-t border-b md:border-t-0 md:border-b-0 md:border-r mt-5 rounded-xl md:border-l md:w-[70%]">
+                        class=" flex flex-wrap justify-center p-3 gap-3 border-t border-b md:border-t-0 md:border-b-0 md:border-r mt-5 rounded-xl md:border-l md:w-[70%]">
 
                         <div class="card-actions justify-start">
-                            <h1 class="b rounded-xl btn-slot flex text-center pl-2 pr-2" data-id="1">
+                            <h1 class="b md:rounded-xl btn-slot flex text-center pl-2 pr-2" data-id="1">
+                                12.30 AM - 10.30 PM <br> BDT: 3000
+                            </h1>
+                        </div>
+                        <div class="card-actions justify-start">
+                            <h1 class="b md:rounded-xl btn-slot text-center pl-2 pr-2" data-id="2">
                                 12.30 AM - 1.30 PM <br> BDT: 3000
                             </h1>
                         </div>
                         <div class="card-actions justify-start">
-                            <h1 class="b rounded-xl btn-slot text-center pl-2 pr-2" data-id="2">
+                            <h1 class="b md:rounded-xl btn-slot text-center pl-2 pr-2" data-id="2">
                                 12.30 AM - 1.30 PM <br> BDT: 3000
                             </h1>
                         </div>
                         <div class="card-actions justify-start">
-                            <h1 class="b rounded-xl btn-slot text-center pl-2 pr-2" data-id="2">
-                                12.30 AM - 1.30 PM <br> BDT: 3000
-                            </h1>
-                        </div>
-                        <div class="card-actions justify-start">
-                            <h1 class="b rounded-xl btn-slot text-center pl-2 pr-2" data-id="2">
+                            <h1 class="b md:rounded-xl btn-slot text-center pl-2 pr-2" data-id="2">
                                 12.30 AM - 1.30 PM <br> BDT: 3000
                             </h1>
                         </div>

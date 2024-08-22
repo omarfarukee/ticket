@@ -58,6 +58,17 @@
       width: 100%;
       
     }
+
+    .button-click{
+    border: 1.2px solid yellow;  
+    transition: 0.6s;
+}
+
+.button-click:hover{
+    background: linear-gradient(135deg, #FCE31F, #FFF59E);
+    color: #000;
+    height: 100%;
+}
     /* loader */
     .loader {
         transform: rotateZ(45deg);
@@ -137,7 +148,7 @@
 
 <body onload='LoaderFunction()'>
     <!-- loader -->
-    <div class="fixed inset-0 flex items-center justify-center bg-transparent backdrop-blur-lg" id="loader-container">
+    <div class="fixed z-10 inset-0 flex items-center justify-center bg-transparent backdrop-blur-lg" id="loader-container">
         <div class="loader">
           <span class="loader"></span>
         </div>
@@ -216,8 +227,8 @@
                 adventure!
             </p>
         </div>
-
-        <div class="md:w-[45%] rounded-xl bg-[#0a1116] pb-5" >
+        <!-- buy area  -->
+        <div class="md:w-[45%] rounded-xl bg-[#0a1116] pb-5 hidden" >
             <div>
                 <div class="text-3xl flex justify-center mt-5 pt-5 md:pt-0">
                     <h1>Buy Your <span class="text-[#f4f81f] font-bold">Best</span> One <i class="fa-solid fa-clipboard-list"></i></h1>
@@ -330,6 +341,22 @@
                         class="fa-solid fa-credit-card"></i></button>
             </div>
         </div>
+        <!-- buy area end -->
+         <!-- login page link area -->
+          <div class="md:w-[45%] rounded-xl bg-[#0a1116] pb-5">
+            <div class="text-3xl flex justify-center mt-5 pt-5 md:pt-0">
+              <h1>Buy Your <span class="text-[#f4f81f] font-bold">Best</span> One <i class="fa-solid fa-clipboard-list"></i></h1>
+          </div>
+          <div class="text-center mt-10">
+            <h1 class="text-lg">to buy tickets you need to login first..</h1>
+          </div>
+          <div class="flex justify-center mt-10">
+            <button class="button-click border mt-10 w-40 p-3 rounded-lg">
+             <a href="login.html">Login <i class="fa-solid fa-right-to-bracket"></i></a> 
+          </button>
+          </div>
+          </div>
+         <!-- login page link end-->
     </div>
 
 <!-- The button to open modal -->

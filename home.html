@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Home page</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 
@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -33,14 +36,15 @@
     <script src="./javascript/navbarScroll.js"></script>
 </head>
 
-<body class="border" onload='LoaderFunction()'>
+<body onload='LoaderFunction()'>
     <!-- loader -->
-    <div class="fixed inset-0 flex items-center justify-center bg-transparent backdrop-blur-lg" id="loader-container">
+    <div class="fixed inset-0 z-20 flex items-center justify-center bg-transparent backdrop-blur-lg"
+        id="loader-container">
         <div class="loader">
-          <span class="loader"></span>
+            <span class="loader"></span>
         </div>
-      </div>
-          <!-- loader -->
+    </div>
+    <!-- loader -->
 
     <!-- navbar -->
     <div id="navbarContainer" class="hidden md:block"></div>
@@ -50,7 +54,7 @@
 
     <!-- home banner slider -->
 
-    <div class="slider-container hidden md:block">
+    <div class="slider-container">
         <div class="slider slider-one slider-active">
             <div class="slider-video">
                 <video autoplay muted loop>
@@ -68,7 +72,7 @@
 
                     <!-- middle info  -->
                     <div class=" md:ml-[10%] ">
-                        <div class="md:w-[80%]  md:mt-[20%] mt-[70%]">
+                        <div class="md:w-[80%]  md:mt-[20%] mt-[50%]">
 
                             <div class="flex items-center gap-0 mt-10">
                                 <div class="flex flex-col items-center absolute text-sm  text-gray-600 uppercase ml-2">
@@ -79,30 +83,40 @@
                                 <i class="fa-solid fa-ticket-simple text-6xl gradient-text"></i>
                                 <h3 class="ml-3">#enjoy #fun</h3>
                             </div>
-                            <div class="text-container">
-                                <h4 class="text">Let's get this</h4>
+                            <div class=" md:w-[500px] w-[250px]">
+                                <h4 class="text-2xl md:text-6xl text-start font-bold text"><div class="cssanimation effect3d">Lets do this</div></h4>
                             </div>
-                            <div class="text-lg tracking-wider	">
+                            <div class="md:text-lg tracking-wider mt-5 text-start">
                                 <h5>Shironamhin & Artcel</h5>
                             </div>
                             <!-- <span></span> -->
                             <!-- button -->
                             <div>
-                                <button class="click p-2 w-[120px] mt-5 rounded-xl flex items-center gap-2">Click here <i class="fa-solid fa-link"></i></button>
+                                <button class="click p-2 w-[120px] mt-5 rounded-xl flex items-center gap-2">Click here
+                                    <i class="fa-solid fa-link"></i></button>
                             </div>
 
                         </div>
                     </div>
-                   <!-- lets rock -->
-                    <div class="w-full flex flex-col gap-5 mr-5">
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">L</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">E</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">T</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">S</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">R</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">O</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">C</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">k</h2>
+                    <!-- lets rock -->
+                    <div
+                        class="md:w-[400px] flex flex-col md:gap-[3vh] gap-[4vh]  md:mr-5 absolute left-[115%] md:left-[68%] ">
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">L
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">E
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">T
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">S
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">R
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">O
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">C
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">k
+                        </h2>
                     </div>
 
                 </div>
@@ -121,9 +135,8 @@
                     </div>
 
                     <!-- middle info  -->
-                    <div class="ml-[20%] md:ml-[10%]">
-                        <div class="md:w-[80%]  md:mt-[14%]">
-                        
+                    <div class=" md:ml-[10%] ">
+                        <div class="md:w-[80%]  md:mt-[20%] mt-[50%]">
 
                             <div class="flex items-center gap-0 mt-10">
                                 <div class="flex flex-col items-center absolute text-sm  text-gray-600 uppercase ml-2">
@@ -134,30 +147,40 @@
                                 <i class="fa-solid fa-ticket-simple text-6xl gradient-text"></i>
                                 <h3 class="ml-3">#enjoy #fun</h3>
                             </div>
-                            <div class="text-container">
-                                <h4 class="text">Happy to have this</h4>
+                            <div class=" md:w-[500px] w-[250px]">
+                                <h4 class="text-2xl md:text-6xl text-start font-bold text"><div class="cssanimation effect3d">Lets do this</div></h4>
                             </div>
-                            <div class="text-lg tracking-wider	">
+                            <div class="md:text-lg tracking-wider mt-5 text-start">
                                 <h5>Shironamhin & Artcel</h5>
                             </div>
                             <!-- <span></span> -->
                             <!-- button -->
                             <div>
-                                <button class="click p-2 w-[120px] mt-5 rounded-xl flex items-center gap-2">Click here <i class="fa-solid fa-link"></i></button>
+                                <button class="click p-2 w-[120px] mt-5 rounded-xl flex items-center gap-2">Click here
+                                    <i class="fa-solid fa-link"></i></button>
                             </div>
 
                         </div>
                     </div>
-
-                    <div class="w-full flex flex-col gap-5 mr-5">
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">L</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">E</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">T</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">S</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">R</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">O</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">C</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">k</h2>
+                    <!-- lets rock -->
+                    <div
+                        class="md:w-[400px] flex flex-col md:gap-[3vh] gap-[4vh]  md:mr-5 absolute left-[115%] md:left-[68%] ">
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">L
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">E
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">T
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">S
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">R
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">O
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">C
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">k
+                        </h2>
                     </div>
 
                 </div>
@@ -174,11 +197,9 @@
                         <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
                         <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
                     </div>
-
                     <!-- middle info  -->
-                    <div class="ml-[25%] md:ml-[10%]">
-                        <div class="md:w-[80%]  md:mt-[14%]">
-                        
+                    <div class=" md:ml-[10%] ">
+                        <div class="md:w-[80%]  md:mt-[20%] mt-[50%]">
 
                             <div class="flex items-center gap-0 mt-10">
                                 <div class="flex flex-col items-center absolute text-sm  text-gray-600 uppercase ml-2">
@@ -189,30 +210,40 @@
                                 <i class="fa-solid fa-ticket-simple text-6xl gradient-text"></i>
                                 <h3 class="ml-3">#enjoy #fun</h3>
                             </div>
-                            <div class="text-container">
-                                <h4 class="text">Let's make togather</h4>
+                            <div class=" md:w-[500px] w-[250px]">
+                                <h4 class="text-2xl md:text-6xl text-start font-bold text"><div class="cssanimation effect3d">Lets do this the memorable one</div></h4>
                             </div>
-                            <div class="text-lg tracking-wider	">
+                            <div class="md:text-lg tracking-wider mt-5 text-start">
                                 <h5>Shironamhin & Artcel</h5>
                             </div>
                             <!-- <span></span> -->
                             <!-- button -->
-                            <div class="">
-                                <button class="click p-2 w-[120px] mt-5 rounded-xl flex items-center gap-2">Click here <i class="fa-solid fa-link"></i></button>
+                            <div>
+                                <button class="click p-2 w-[120px] mt-5 rounded-xl flex items-center gap-2">Click here
+                                    <i class="fa-solid fa-link"></i></button>
                             </div>
 
                         </div>
                     </div>
-
-                    <div class="w-full flex flex-col gap-5 mr-5">
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">L</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">E</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">T</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">S</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">R</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">O</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">C</h2>
-                        <h2 class="text-5xl letter text-gray-600 hover:text-[#ecf024] flex justify-end">k</h2>
+                    <!-- lets rock -->
+                    <div
+                        class="md:w-[400px] flex flex-col md:gap-[3vh] gap-[4vh]  md:mr-5 absolute left-[115%] md:left-[68%] ">
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">L
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">E
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">T
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">S
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">R
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">O
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">C
+                        </h2>
+                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">k
+                        </h2>
                     </div>
 
                 </div>
@@ -227,7 +258,8 @@
     <!-- video div with counter -->
     <div class="md:flex gap-3" style="overflow: hidden;">
 
-        <div class=" video-container md:w-[40%] w-full relative border-r-2" style="border-top-right-radius:50px; border-bottom-right-radius: 50px;">
+        <div class=" video-container md:w-[40%] w-full relative border-r-2"
+            style="border-top-right-radius:50px; border-bottom-right-radius: 50px;">
             <video autoplay muted loop class="video-background" data-aos="fade-right" data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
                 <source src="./videos/7586157-hd_1080_1920_24fps.mp4" type="video/mp4">
@@ -280,7 +312,7 @@
         </div>
 
         <!-- slider info -->
-        <div class="md:w-[60%] rounded-xl border">
+        <div class="md:w-[60%] rounded-xl">
 
             <div class="section-2 rounded-xl">
                 <div class="carousel-container rounded-xl" data-aos="zoom-in-up">
@@ -288,14 +320,16 @@
                         <div>
                             <img class="" src="./eventspic/330443-original.webp" alt="Banner 1">
                             <!-- <img class="block lg:hidden" src="./images&videos/banner_m1.png" alt="Banner 1"> -->
-                            <div class="overlay-slide">
+                            <div class="overlay-slide pb-8 md:pb-0">
                                 <div class="slide-button flex flex-col text-center items-center">
                                     <div class="">
-                                        <a href=""><h1 class="md:text-6xl uppercase e-name">Event name</h1></a>
-                                        <p><i class="fa-solid fa-location-dot"></i> Dhaka, Dhanmondi-32</p>
-                                        <p><i class="fa-regular fa-clock"></i> 12.30 pm</p>
+                                        <a href="">
+                                            <h1 class="md:text-6xl text-xl uppercase e-name w-[200px] md:w-full">Event name</h1>
+                                        </a>
+                                        <p class="text-sm text-lg"><i class="fa-solid fa-location-dot"></i> Dhaka, Dhanmondi-32</p>
+                                        <p class="text-sm text-lg"><i class="fa-regular fa-clock"></i> 12.30 pm</p>
                                     </div>
-                                    <button class="button-click border mt-10 w-40 p-3 rounded-lg">
+                                    <button class="button-click border mt-2 md:mt-10 md:w-40 p-2 md:p-3 mb-3 rounded-lg">
                                         click here <i class="fa-solid fa-link"></i>
                                     </button>
                                 </div>
@@ -304,16 +338,18 @@
                     </div>
                     <div class="carousel-slide">
                         <div>
-                            <img class="hidden lg:block" src="./eventspic/330443-original.webp" alt="Banner 2">
-                            <img class="block lg:hidden" src="./images&videos/banner_m1.png" alt="Banner 2">
-                            <div class="overlay-slide">
+                            <img class="" src="./eventspic/330443-original.webp" alt="Banner 1">
+                            <!-- <img class="block lg:hidden" src="./images&videos/banner_m1.png" alt="Banner 1"> -->
+                            <div class="overlay-slide pb-8 md:pb-0">
                                 <div class="slide-button flex flex-col text-center items-center">
                                     <div class="">
-                                       <a href=""><h1 class="md:text-6xl uppercase e-name">Event name</h1></a> 
-                                        <p><i class="fa-solid fa-location-dot"></i> Dhaka, Dhanmondi-32</p>
-                                        <p><i class="fa-regular fa-clock"></i> 12.30 pm</p>
+                                        <a href="">
+                                            <h1 class="md:text-6xl text-xl uppercase e-name w-[200px] md:w-full">Event name</h1>
+                                        </a>
+                                        <p class="text-sm text-lg"><i class="fa-solid fa-location-dot"></i> Dhaka, Dhanmondi-32</p>
+                                        <p class="text-sm text-lg"><i class="fa-regular fa-clock"></i> 12.30 pm</p>
                                     </div>
-                                    <button class="button-click border mt-10 w-40 p-3 rounded-lg">
+                                    <button class="button-click border mt-2 md:mt-10 md:w-40 p-2 md:p-3 mb-3 rounded-lg">
                                         click here <i class="fa-solid fa-link"></i>
                                     </button>
                                 </div>
@@ -322,22 +358,25 @@
                     </div>
                     <div class="carousel-slide">
                         <div>
-                            <img class="hidden lg:block" src="./eventspic/330443-original.webp" alt="Banner 3">
-                            <img class="block lg:hidden" src="./images&videos/banner_m1.png" alt="Banner 3">
-                            <div class="overlay-slide">
+                            <img class="" src="./eventspic/330443-original.webp" alt="Banner 1">
+                            <!-- <img class="block lg:hidden" src="./images&videos/banner_m1.png" alt="Banner 1"> -->
+                            <div class="overlay-slide pb-8 md:pb-0">
                                 <div class="slide-button flex flex-col text-center items-center">
                                     <div class="">
-                                        <a href=""><h1 class="md:text-6xl uppercase e-name">Event name</h1></a> 
-                                        <p><i class="fa-solid fa-location-dot"></i> Dhaka, Dhanmondi-32</p>
-                                        <p><i class="fa-regular fa-clock"></i> 12.30 pm</p>
+                                        <a href="">
+                                            <h1 class="md:text-6xl text-xl uppercase e-name w-[200px] md:w-full">Event name</h1>
+                                        </a>
+                                        <p class="text-sm text-lg"><i class="fa-solid fa-location-dot"></i> Dhaka, Dhanmondi-32</p>
+                                        <p class="text-sm text-lg"><i class="fa-regular fa-clock"></i> 12.30 pm</p>
                                     </div>
-                                    <button class="button-click border mt-10 w-40 p-3 rounded-lg">
+                                    <button class="button-click border mt-2 md:mt-10 md:w-40 p-2 md:p-3 mb-3 rounded-lg">
                                         click here <i class="fa-solid fa-link"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <button class="carousel-buttonn prevv"><i class="fa-solid fa-arrow-left"></i></button>
                 <button class="carousel-buttonn nextt"><i class="fa-solid fa-arrow-right"></i></button>
@@ -351,16 +390,16 @@
     <!-- how to take events steps -->
 
     <div class="mt-40 mb-40" style="overflow: hidden;">
-        <div class="flex justify-center mt-20 mb-28 text-5xl uppercase text-center" data-aos="fade-up"
+        <div class="flex justify-center mt-20 mb-28 md:text-5xl uppercase text-center" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">
-            <h1>Its Get Faster then you thoughts</h1>
+            <h1 class="text-3xl md:text-4xl font-bold">Its Get Faster then you thoughts</h1>
             <span class="icon-span"></span>
         </div>
         <div class="flex justify-center flex-col items-center "
             style="background-image: url(./imagehere/process-top.png); background-repeat: no-repeat;background-size: contain; background-position: center;">
             <div class=" w-[60%] md:flex items-center">
                 <img class="w-72" src="./imagehere/pngwing.com (7).png" alt="" data-aos="fade-right">
-                <div class="text-3xl font-bold">
+                <div class="md:text-3xl text-2xl font-bold">
                     <h1 class="uppercase" data-aos="fade-left">1- Select your <span
                             class="text-yellow-300">envent</span></h1>
                 </div>
@@ -373,7 +412,7 @@
         <div class="flex justify-center flex-col items-center ">
             <div class=" w-[60%] flex flex-col items-end">
                 <div class="md:flex items-center">
-                    <div class="text-3xl font-bold">
+                    <div class="md:text-3xl text-2xl font-bold">
                         <h1 class="uppercase" data-aos="fade-right">2- <span class="text-yellow-300">Register</span>with
                             details</h1>
                     </div>
@@ -392,7 +431,7 @@
             style="background-image: url(./imagehere/client-bg-1.png); background-repeat: no-repeat;background-size: cover; background-position: center;">
             <div class=" w-[60%] md:flex items-center">
                 <img class="w-72" src="./imagehere/pngwing.com (9).png" alt="" data-aos="fade-right">
-                <div class="text-3xl font-bold">
+                <div class="md:text-3xl text-2xl font-bold">
                     <h1 class="uppercase" data-aos="fade-left">3- easy <span class="text-yellow-300">pay</span></h1>
                 </div>
 
@@ -404,7 +443,7 @@
         <div class="flex justify-center flex-col items-center ">
             <div class=" w-[60%] flex flex-col items-end">
                 <div class="md:flex items-center">
-                    <div class="text-3xl font-bold">
+                    <div class="md:text-3xl text-2xl font-bold">
                         <h1 class="uppercase" data-aos="fade-right">4- <span class="text-yellow-300">enjoy</span> event
                         </h1>
                     </div>
@@ -431,47 +470,65 @@
     </div>
     <div class="flex justify-center mt-20 mb-40" data-aos="fade-right">
         <div class="flex flex-wrap gap-3 pl-0 md:pl-3 w-[89%]">
-            <div class=" card w-96 h-80 bg-gray-700 rounded-lg transition-all duration-300 ease-in-out cursor-pointer relative border-2 border-black shadow-lg shadow-[#fce21f49]">
+            <div
+                class=" card w-96 h-80 bg-gray-700 rounded-lg transition-all duration-300 ease-in-out cursor-pointer relative border-2 border-black shadow-lg shadow-[#fce21f49]">
                 <div class="image-container h-[75%] w-full overflow-hidden rounded-t-lg">
-                    <img src="https://img.freepik.com/free-psd/horizontal-banner-template-professional-business-event_23-2149313272.jpg" alt="Card Image"
-                        class="card-img w-full h-full object-cover">
+                    <img src="https://img.freepik.com/free-psd/horizontal-banner-template-professional-business-event_23-2149313272.jpg"
+                        alt="Card Image" class="card-img w-full h-full object-cover">
                 </div>
                 <div class="details-container h-[25%] w-full bg-white p-4 flex flex-col justify-between rounded-b-lg">
-                    <div class="title text-gray-900 text-lg font-bold">BSides Cox's Bazar (International Cybersecurity Conference)</div>
-                    <div class="card-button absolute inset-0 flex flex-col justify-center items-center bg-transparent	backdrop-blur-sm	">
-                    <p><i class="fa-solid fa-location-dot"></i> Dhaka 31/10</p>
-                    <p><i class="fa-solid fa-calendar-days"></i> 20-08-2024</p>
-                    <p><i class="fa-regular fa-clock"></i>10.30 am</p>
-                    <button class="bg-yellow-300 text-black py-2 px-4 rounded-full mt-3">Buy Ticket <i class="fa-solid fa-ticket"></i></button>
-                </div>
-                </div>
-            </div>
-            <div
-                class="card w-96 h-80 bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out cursor-pointer">
-                <img src="./bannerimages/pexels-mark-angelo-sampan-738078-1587927.jpg" alt="Card Image"
-                    class="card-img w-full h-full object-cover rounded-lg">
-                <div class="card-overlay absolute inset-0 opacity-0"></div>
-                <div class="absolute bottom-4 left-4 text-white text-xl font-bold z-10">Event Title</div>
-                <div class="card-button absolute inset-0 flex flex-col justify-center items-center">
-                    <p><i class="fa-solid fa-location-dot"></i> Dhaka 31/10</p>
-                    <p><i class="fa-solid fa-calendar-days"></i> 20-08-2024</p>
-                    <p><i class="fa-regular fa-clock"></i>10.30 am</p>
-                    <button class="bg-yellow-300 text-black py-2 px-4 rounded-full mt-3">Buy Ticket <i class="fa-solid fa-ticket"></i></button>
+                    <div class="title text-gray-900 text-lg font-bold">BSides Cox's Bazar (International Cybersecurity
+                        Conference)</div>
+                    <div
+                        class="card-button absolute inset-0 flex flex-col justify-center items-center bg-[#0000005d]	backdrop-blur-sm	">
+                        <p class="text-[fffff]"><i class="fa-solid fa-location-dot"></i> Dhaka 31/10</p>
+                        <p class="text-[fffff]"><i class="fa-solid fa-calendar-days"></i> 20-08-2024</p>
+                        <p class="text-[fffff]"><i class="fa-regular fa-clock"></i>10.30 am</p>
+                        <button class="bg-yellow-300 text-black py-2 px-4 rounded-full mt-3">Buy Ticket <i
+                                class="fa-solid fa-ticket"></i></button>
+                    </div>
                 </div>
             </div>
             <div
-                class="card w-96 h-80 bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out cursor-pointer">
-                <img src="./bannerimages/pexels-mark-angelo-sampan-738078-1587927.jpg" alt="Card Image"
-                    class="card-img w-full h-full object-cover rounded-lg">
-                <div class="card-overlay absolute inset-0 opacity-0"></div>
-                <div class="absolute bottom-4 left-4 text-white text-xl font-bold z-10">Event Title</div>
-                <div class="card-button absolute inset-0 flex flex-col justify-center items-center">
-                    <p><i class="fa-solid fa-location-dot"></i> Dhaka 31/10</p>
-                    <p><i class="fa-solid fa-calendar-days"></i> 20-08-2024</p>
-                    <p><i class="fa-regular fa-clock"></i>10.30 am</p>
-                    <button class="bg-yellow-300 text-black py-2 px-4 rounded-full mt-3">Buy Ticket <i class="fa-solid fa-ticket"></i></button>
+                class=" card w-96 h-80 bg-gray-700 rounded-lg transition-all duration-300 ease-in-out cursor-pointer relative border-2 border-black shadow-lg shadow-[#fce21f49]">
+                <div class="image-container h-[75%] w-full overflow-hidden rounded-t-lg">
+                    <img src="https://img.freepik.com/free-psd/horizontal-banner-template-professional-business-event_23-2149313272.jpg"
+                        alt="Card Image" class="card-img w-full h-full object-cover">
+                </div>
+                <div class="details-container h-[25%] w-full bg-white p-4 flex flex-col justify-between rounded-b-lg">
+                    <div class="title text-gray-900 text-lg font-bold">BSides Cox's Bazar (International Cybersecurity
+                        Conference)</div>
+                    <div
+                        class="card-button absolute inset-0 flex flex-col justify-center items-center bg-[#0000005d]	backdrop-blur-sm	">
+                        <p class="text-[fffff]"><i class="fa-solid fa-location-dot"></i> Dhaka 31/10</p>
+                        <p class="text-[fffff]"><i class="fa-solid fa-calendar-days"></i> 20-08-2024</p>
+                        <p class="text-[fffff]"><i class="fa-regular fa-clock"></i>10.30 am</p>
+                        <button class="bg-yellow-300 text-black py-2 px-4 rounded-full mt-3">Buy Ticket <i
+                                class="fa-solid fa-ticket"></i></button>
+                    </div>
                 </div>
             </div>
+            <div
+                class=" card w-96 h-80 bg-gray-700 rounded-lg transition-all duration-300 ease-in-out cursor-pointer relative border-2 border-black shadow-lg shadow-[#fce21f49]">
+                <div class="image-container h-[75%] w-full overflow-hidden rounded-t-lg">
+                    <img src="https://img.freepik.com/free-psd/horizontal-banner-template-professional-business-event_23-2149313272.jpg"
+                        alt="Card Image" class="card-img w-full h-full object-cover">
+                </div>
+                <div class="details-container h-[25%] w-full bg-white p-4 flex flex-col justify-between rounded-b-lg">
+                    <div class="title text-gray-900 text-lg font-bold">BSides Cox's Bazar (International Cybersecurity
+                        Conference)</div>
+                    <div
+                        class="card-button absolute inset-0 flex flex-col justify-center items-center bg-[#0000005d]	backdrop-blur-sm	">
+                        <p class="text-[fffff]"><i class="fa-solid fa-location-dot"></i> Dhaka 31/10</p>
+                        <p class="text-[fffff]"><i class="fa-solid fa-calendar-days"></i> 20-08-2024</p>
+                        <p class="text-[fffff]"><i class="fa-regular fa-clock"></i>10.30 am</p>
+                        <button class="bg-yellow-300 text-black py-2 px-4 rounded-full mt-3">Buy Ticket <i
+                                class="fa-solid fa-ticket"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
 
 
 
@@ -481,7 +538,7 @@
 
 
     <!-- gallary section -->
-    <div class="flex justify-center uppercase text-3xl font-bold">
+    <div class="flex justify-center uppercase text-3xl font-bold mb-5">
         <h1 data-aos="fade-right">gallery </h1>
         <span class="mt-[10%] md:mt-[4%]" style="background: #f4f81f;
         height: 3px;
@@ -574,13 +631,16 @@
 
     <!-- footer -->
 
-    <footer class="relative h-[350px] mt-20" style="background: url(./logo/photo-1459749411175-04bf5292ceea.jpg) center no-repeat; background-size: cover; position: relative;">
+    <footer class="relative h-[350px] mt-20"
+        style="background: url(./logo/photo-1459749411175-04bf5292ceea.jpg) center no-repeat; background-size: cover; position: relative;">
         <!-- Dark Overlay using Inline CSS -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8);"></div>
-    
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8);">
+        </div>
+
         <div style="position: relative; z-index: 1;" class="flex justify-center pt-20">
-            <div class="md:w-[800px]  flex justify-center">
-                <div class="flex md:gap-8 gap-5 items-center">
+            <div class="md:w-[800px] w-full  flex justify-center">
+                <div class="flex md:gap-8 gap-5 justify-center items-center w-full">
                     <div class="w-48 text-end">
                         <p class="text-sm md:text-[16px]">Dhaka, south 11/12 block</p>
                         <p class="text-sm md:text-[16px]">Dhaka, Bangladesh</p>
@@ -595,11 +655,11 @@
                 </div>
             </div>
         </div>
-    
+
         <div style="position: relative; z-index: 1;" class="flex justify-center mt-5">
             <h1 class="text-3xl uppercase">Tix bees</h1>
         </div>
-    
+
         <div style="position: relative; z-index: 1;">
             <div class="flex justify-center mt-10 text-lg gap-6">
                 <a href=""><i class="footer-icon p-2 rounded bg-[#fce21f46] fa-brands fa-square-facebook"></i></a>
@@ -608,10 +668,10 @@
             </div>
         </div>
     </footer>
-    
-    
+
+
     <!-- footer end -->
-<!-- bottom footer -->
+    <!-- bottom footer -->
     <footer>
         <div class=" h-[60px] flex justify-center items-center bg-[#0a1116]">
             <p> <span class="text-yellow-300">AncoraThemes </span>© 2024. All rights reserved.</p>
@@ -620,6 +680,7 @@
 
     <!-- script tag -->
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
@@ -687,7 +748,7 @@
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slider');
         const totalSlides = slides.length;
-        const slideInterval = 600000; // 3 seconds for each slide
+        const slideInterval = 6000; // 3 seconds for each slide
 
         function showSlide(index) {
             slides.forEach((slide, i) => {
@@ -751,15 +812,15 @@
         setInterval(nextSlidee, 60000);
         // banner js end
         // loader
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const preloader = document.getElementById('loader-container');
             function LoaderFunction() {
-                setTimeout(function() {
+                setTimeout(function () {
                     preloader.style.display = 'none';
                 }, 1000);
             }
-        
-            window.addEventListener('load', function() {
+
+            window.addEventListener('load', function () {
                 LoaderFunction();
             });
         });
