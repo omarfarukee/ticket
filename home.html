@@ -15,7 +15,7 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -27,7 +27,6 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="gallary.css">
     <link rel="stylesheet" href="lightbox.css">
     <link rel="stylesheet" href="upcommingEvent.css">
@@ -52,218 +51,285 @@
     <div id="bottomNavbar" class="md:hidden block"></div>
     <!-- navbar end -->
 
+    <!-- search bar -->
+    <div class="container-seacrh md:hidden block">
+        <input type="text" placeholder="Search...">
+        <div class="search"></div>
+      </div>
+    <!-- search end -->
     <!-- home banner slider -->
-<div class="flex justify-center mt-10 md:mt-0 mb-10">
-    <div class="slider-container shadow-lg shadow-[#f4f81f70]">
-        <div class="slider slider-one slider-active">
-            <div class="slider-video">
-                <video autoplay muted loop>
-                    <source src="./bannerimages/event.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <!-- <div class="image-wrapper"></div> -->
-                <div class="slider-text animate__animated animate__bounceInLeft  flex">
-                    <!-- side icon -->
-                    <div class="flex flex-col gap-5 text-2xl w-[3%] pt-[60vh] text-center ml-8 hidden md:block">
-                        <i class="cursor-pointer fa-brands fa-square-facebook hover:text-blue-400"></i>
-                        <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
-                        <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
-                    </div>
+    <div class="flex justify-center mt-40 md:mt-0 mb-10">
+        <div class="slider-container shadow-lg shadow-[#f4f81f70] md:shadow-none">
+            <div class="slider slider-one slider-active">
+                <div class="slider-video">
+                    <video autoplay muted loop>
+                        <source src="./bannerimages/event.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- <div class="image-wrapper"></div> -->
+                    <div class="slider-text animate__animated animate__bounceInLeft  flex">
+                        <!-- side icon -->
+                        <div class="flex flex-col gap-5 text-2xl w-[3%] pt-[60vh] text-center ml-8 hidden md:block">
+                            <i class="cursor-pointer fa-brands fa-square-facebook hover:text-blue-400"></i>
+                            <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
+                            <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
+                        </div>
 
-                    <!-- middle info  -->
-                    <div class=" md:ml-[10%]">
-                        <div class="md:w-[80%]  md:mt-[20%] mt-[-20%]">
+                        <!-- middle info  -->
+                        <div class=" md:ml-[10%]">
+                            <div class="md:w-[80%]  md:mt-[20%] mt-[-20%]">
 
-                            <div class="flex items-center gap-0 md:mt-10 mt-6">
-                                <div class="flex flex-col items-center absolute text-sm  text-gray-600 uppercase ml-2">
-                                    <h5>19 july</h5>
-                                    <h5>WED</h5>
+                                <div class="flex items-center gap-0 md:mt-10 mt-6">
+                                    <div
+                                        class="flex flex-col items-center absolute md:text-sm text-[9px]  text-gray-600 uppercase md:ml-2 ml-[4px]">
+                                        <h5>19 july</h5>
+                                        <h5>WED</h5>
+                                    </div>
+
+                                    <i class="fa-solid fa-ticket-simple md:text-6xl text-4xl gradient-text"></i>
+                                    <h3 class="md:ml-3 ml-1 md:block hidden text-[10px] md:text-lg">#enjoy #fun</h3>
+                                    <h3 class="md:ml-3 ml-1 block md:hidden text-[10px] md:text-lg">#enjoy #fun</h3>
+                                </div>
+                                <div class=" md:w-[700px] w-[250px]">
+                                    <h4 class="text-[20px] md:text-6xl text-start font-bold text">Lets do this lets do
+                                        the rock togather</h4>
+                                </div>
+                                <div class="md:text-lg text-[11px] tracking-wider md:mt-5 mt-0 text-start">
+                                    <h5>Shironamhin & Artcel</h5>
+                                </div>
+                                <!-- <span></span> -->
+                                <!-- button -->
+                                <div>
+                                    <button
+                                        class="click md:p-2 py-[5px] md:w-[120px] w-[90px] md:text-[16px] text-[11px] md:mt-5 mt-0 md:rounded-xl rounded flex items-center gap-2 text-center pl-2">Click
+                                        here
+                                        <i class="fa-solid fa-link"></i></button>
                                 </div>
 
-                                <i class="fa-solid fa-ticket-simple text-6xl gradient-text"></i>
-                                <h3 class="ml-3">#enjoy #fun</h3>
                             </div>
-                            <div class=" md:w-[700px] w-[250px]">
-                                <h4 class="text-[16px] md:text-6xl text-start font-bold text">Lets do this lets do the rock togather</h4>
-                            </div>
-                            <div class="md:text-lg text-[11px] tracking-wider md:mt-5 mt-0 text-start">
-                                <h5>Shironamhin & Artcel</h5>
-                            </div>
-                            <!-- <span></span> -->
-                            <!-- button -->
-                            <div>
-                                <button class="click md:p-2 py-[5px] md:w-[120px] w-[90px] md:text-[16px] text-[11px] md:mt-5 mt-0 md:rounded-xl rounded flex items-center gap-2 text-center pl-2">Click here
-                                    <i class="fa-solid fa-link"></i></button>
-                            </div>
-
                         </div>
-                    </div>
-                    <!-- lets rock -->
-                    <div class="md:block hidden">
-                        <div
-                        class=" md:w-[400px] flex flex-col md:gap-[3vh] gap-[4vh]  md:mr-5 absolute left-[115%] md:left-[68%] ">
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">L
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">E
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">T
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">S
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">R
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">O
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">C
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">k
-                        </h2>
-                    </div>
-                     </div>
-                    
+                        <!-- lets rock -->
+                        <div class="md:block hidden">
+                            <div
+                                class=" md:w-[400px] flex flex-col md:gap-[3vh] gap-[4vh]  md:mr-5 absolute left-[115%] md:left-[68%] ">
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    L
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    E
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    T
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    S
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    R
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    O
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    C
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    k
+                                </h2>
+                            </div>
+                        </div>
 
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="slider slider-two ">
-            <div class="slider-image zoom-effect"
-                style="background-image: url('./bannerimages/pexels-rahulp9800-1652353.jpg')">
-                <!-- <div class="image-wrapper"></div> -->
-                <div class="slider-text animate__animated animate__bounceInLeft  flex">
-                    <!-- side icon -->
-                    <div class="flex flex-col gap-5 text-2xl w-[3%] md:pt-[60vh] text-center ml-8 hidden md:block">
-                        <i class="cursor-pointer fa-brands fa-square-facebook hover:text-blue-400"></i>
-                        <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
-                        <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
-                    </div>
+            <div class="slider slider-two ">
+                <div class="slider-image zoom-effect"
+                    style="background-image: url('./bannerimages/pexels-rahulp9800-1652353.jpg')">
+                    <!-- <div class="image-wrapper"></div> -->
+                    <div class="slider-text animate__animated animate__bounceInLeft  flex">
+                        <!-- side icon -->
+                        <div class="flex flex-col gap-5 text-2xl w-[3%] md:pt-[60vh] text-center ml-8 hidden md:block">
+                            <i class="cursor-pointer fa-brands fa-square-facebook hover:text-blue-400"></i>
+                            <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
+                            <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
+                        </div>
 
-                    <!-- middle info  -->
-                    <div class=" md:ml-[10%]">
-                        <div class="md:w-[80%]  md:mt-[20%] mt-[-20%]">
+                        <!-- middle info  -->
+                        <div class=" md:ml-[10%]">
+                            <div class="md:w-[80%]  md:mt-[20%] mt-[-20%]">
 
-                            <div class="flex items-center gap-0 md:mt-10 mt-6">
-                                <div class="flex flex-col items-center absolute text-sm  text-gray-600 uppercase ml-2">
-                                    <h5>19 july</h5>
-                                    <h5>WED</h5>
+                                <div class="flex items-center gap-0 md:mt-10 mt-6">
+                                    <div
+                                        class="flex flex-col items-center absolute md:text-sm text-[9px]  text-gray-600 uppercase md:ml-2 ml-[4px]">
+                                        <h5>19 july</h5>
+                                        <h5>WED</h5>
+                                    </div>
+
+                                    <i class="fa-solid fa-ticket-simple md:text-6xl text-4xl gradient-text"></i>
+                                    <h3 class="md:ml-3 ml-1 md:block hidden text-[10px] md:text-lg">#enjoy #fun</h3>
+                                    <h3 class="md:ml-3 ml-1 block md:hidden text-[10px] md:text-lg">#enjoy #fun</h3>
+                                </div>
+                                <div class=" md:w-[700px] w-[250px]">
+                                    <h4 class="text-[20px] md:text-6xl text-start font-bold text">Lets do this lets do
+                                        the rock togather</h4>
+                                </div>
+                                <div class="md:text-lg text-[11px] tracking-wider md:mt-5 mt-0 text-start">
+                                    <h5>Shironamhin & Artcel</h5>
+                                </div>
+                                <!-- <span></span> -->
+                                <!-- button -->
+                                <div>
+                                    <button
+                                        class="click md:p-2 py-[5px] md:w-[120px] w-[90px] md:text-[16px] text-[11px] md:mt-5 mt-0 md:rounded-xl rounded flex items-center gap-2 text-center pl-2">Click
+                                        here
+                                        <i class="fa-solid fa-link"></i></button>
                                 </div>
 
-                                <i class="fa-solid fa-ticket-simple text-6xl gradient-text"></i>
-                                <h3 class="ml-3">#enjoy #fun</h3>
                             </div>
-                            <div class=" md:w-[700px] w-[250px]">
-                                <h4 class="text-[16px] md:text-6xl text-start font-bold text">Lets do this lets do the rock togather</h4>
-                            </div>
-                            <div class="md:text-lg text-[11px] tracking-wider md:mt-5 mt-0 text-start">
-                                <h5>Shironamhin & Artcel</h5>
-                            </div>
-                            <!-- <span></span> -->
-                            <!-- button -->
-                            <div>
-                                <button class="click md:p-2 py-[5px] md:w-[120px] w-[90px] md:text-[16px] text-[11px] md:mt-5 mt-0 md:rounded-xl rounded flex items-center gap-2 text-center pl-2">Click here
-                                    <i class="fa-solid fa-link"></i></button>
-                            </div>
-
                         </div>
-                    </div>
-                   <!-- lets rock -->
-                   <div class="md:block hidden">
-                    <div
-                    class=" md:w-[400px] flex flex-col md:gap-[3vh] gap-[4vh]  md:mr-5 absolute left-[115%] md:left-[68%] ">
-                    <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">L
-                    </h2>
-                    <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">E
-                    </h2>
-                    <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">T
-                    </h2>
-                    <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">S
-                    </h2>
-                    <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">R
-                    </h2>
-                    <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">O
-                    </h2>
-                    <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">C
-                    </h2>
-                    <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">k
-                    </h2>
-                </div>
-                 </div>
-                    
+                        <!-- lets rock -->
+                        <div class="md:block hidden">
+                            <div
+                                class=" md:w-[400px] flex flex-col md:gap-[3vh] gap-[4vh]  md:mr-5 absolute left-[115%] md:left-[68%] ">
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    L
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    E
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    T
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    S
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    R
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    O
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    C
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    k
+                                </h2>
+                            </div>
+                        </div>
 
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="slider slider-three">
-            <div class="slider-image zoom-effect"
-                style="background-image: url('./bannerimages/pexels-vishnurnair-1105666.jpg')">
-                <!-- <div class="image-wrapper"></div> -->
-                <div class="slider-text animate__animated animate__bounceInLeft  flex">
-                    <!-- side icon -->
-                    <div class="flex flex-col gap-5 text-2xl w-[3%] pt-[60vh] text-center ml-8 hidden md:block">
-                        <i class="cursor-pointer fa-brands fa-square-facebook hover:text-blue-400"></i>
-                        <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
-                        <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
-                    </div>
-                    <!-- middle info  -->
-                    <div class=" md:ml-[10%]">
-                        <div class="md:w-[80%]  md:mt-[20%] mt-[-20%]">
+            <div class="slider slider-three">
+                <div class="slider-image zoom-effect"
+                    style="background-image: url('./bannerimages/pexels-vishnurnair-1105666.jpg')">
+                    <!-- <div class="image-wrapper"></div> -->
+                    <div class="slider-text animate__animated animate__bounceInLeft  flex">
+                        <!-- side icon -->
+                        <div class="flex flex-col gap-5 text-2xl w-[3%] pt-[60vh] text-center ml-8 hidden md:block">
+                            <i class="cursor-pointer fa-brands fa-square-facebook hover:text-blue-400"></i>
+                            <i class="cursor-pointer fa-brands fa-youtube hover:text-red-400"></i>
+                            <i class="cursor-pointer fa-brands fa-instagram hover:text-orange-300"></i>
+                        </div>
+                        <!-- middle info  -->
+                        <div class=" md:ml-[10%]">
+                            <div class="md:w-[80%]  md:mt-[20%] mt-[-20%]">
 
-                            <div class="flex items-center gap-0 md:mt-10 mt-6">
-                                <div class="flex flex-col items-center absolute text-sm  text-gray-600 uppercase ml-2">
-                                    <h5>19 july</h5>
-                                    <h5>WED</h5>
+                                <div class="flex items-center gap-0 md:mt-10 mt-6">
+                                    <div
+                                        class="flex flex-col items-center absolute md:text-sm text-[9px]  text-gray-600 uppercase md:ml-2 ml-[4px]">
+                                        <h5>19 july</h5>
+                                        <h5>WED</h5>
+                                    </div>
+
+                                    <i class="fa-solid fa-ticket-simple md:text-6xl text-4xl gradient-text"></i>
+                                    <h3 class="md:ml-3 ml-1 md:block hidden text-[10px] md:text-lg">#enjoy #fun</h3>
+                                    <h3 class="md:ml-3 ml-1 block md:hidden text-[10px] md:text-lg">#enjoy #fun</h3>
+                                </div>
+                                <div class=" md:w-[700px] w-[250px]">
+                                    <h4 class="text-[20px] md:text-6xl text-start font-bold text">Lets do this lets do
+                                        the rock togather</h4>
+                                </div>
+                                <div class="md:text-lg text-[11px] tracking-wider md:mt-5 mt-0 text-start">
+                                    <h5>Shironamhin & Artcel</h5>
+                                </div>
+                                <!-- <span></span> -->
+                                <!-- button -->
+                                <div>
+                                    <button
+                                        class="click md:p-2 py-[5px] md:w-[120px] w-[90px] md:text-[16px] text-[11px] md:mt-5 mt-0 md:rounded-xl rounded flex items-center gap-2 text-center pl-2">Click
+                                        here
+                                        <i class="fa-solid fa-link"></i></button>
                                 </div>
 
-                                <i class="fa-solid fa-ticket-simple text-6xl gradient-text"></i>
-                                <h3 class="ml-3">#enjoy #fun</h3>
                             </div>
-                            <div class=" md:w-[700px] w-[250px]">
-                                <h4 class="text-[16px] md:text-6xl text-start font-bold text">Lets do this lets do the rock togather</h4>
-                            </div>
-                            <div class="md:text-lg text-[11px] tracking-wider md:mt-5 mt-0 text-start">
-                                <h5>Shironamhin & Artcel</h5>
-                            </div>
-                            <!-- <span></span> -->
-                            <!-- button -->
-                            <div>
-                                <button class="click md:p-2 py-[5px] md:w-[120px] w-[90px] md:text-[16px] text-[11px] md:mt-5 mt-0 md:rounded-xl rounded flex items-center gap-2 text-center pl-2">Click here
-                                    <i class="fa-solid fa-link"></i></button>
-                            </div>
-
                         </div>
-                    </div>
-                    <!-- lets rock -->
-                     <div class="md:block hidden">
-                        <div
-                        class=" md:w-[400px] flex flex-col md:gap-[3vh] gap-[4vh]  md:mr-5 absolute left-[115%] md:left-[68%] ">
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">L
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">E
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">T
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">S
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">R
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">O
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">C
-                        </h2>
-                        <h2 class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">k
-                        </h2>
-                    </div>
-                     </div>
-                 
+                        <!-- lets rock -->
+                        <div class="md:block hidden">
+                            <div
+                                class=" md:w-[400px] flex flex-col md:gap-[3vh] gap-[4vh]  md:mr-5 absolute left-[115%] md:left-[68%] ">
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    L
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    E
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    T
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    S
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    R
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    O
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    C
+                                </h2>
+                                <h2
+                                    class="md:text-5xl text-2xl letter text-gray-400 hover:text-[#ecf024] flex justify-end">
+                                    k
+                                </h2>
+                            </div>
+                        </div>
 
+
+                    </div>
                 </div>
             </div>
+            <button class="slider-button prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-button next" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
-        <button class="slider-button prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></button>
-        <button class="slider-button next" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
-</div>
-    
-
     <!-- home banner slider end-->
 
     <!-- video div with counter -->
@@ -335,12 +401,15 @@
                                 <div class="slide-button flex flex-col text-center items-center">
                                     <div class="">
                                         <a href="">
-                                            <h1 class="md:text-6xl text-xl uppercase e-name w-[200px] md:w-full">Event name</h1>
+                                            <h1 class="md:text-6xl text-xl uppercase e-name w-[200px] md:w-full">Event
+                                                name</h1>
                                         </a>
-                                        <p class="text-sm text-lg"><i class="fa-solid fa-location-dot"></i> Dhaka, Dhanmondi-32</p>
+                                        <p class="text-sm text-lg"><i class="fa-solid fa-location-dot"></i> Dhaka,
+                                            Dhanmondi-32</p>
                                         <p class="text-sm text-lg"><i class="fa-regular fa-clock"></i> 12.30 pm</p>
                                     </div>
-                                    <button class="button-click border mt-2 md:mt-10 md:w-40 p-2 md:p-3 mb-3 rounded-lg">
+                                    <button
+                                        class="button-click border mt-2 md:mt-10 md:w-40 p-2 md:p-3 mb-3 rounded-lg">
                                         click here <i class="fa-solid fa-link"></i>
                                     </button>
                                 </div>
@@ -355,12 +424,15 @@
                                 <div class="slide-button flex flex-col text-center items-center">
                                     <div class="">
                                         <a href="">
-                                            <h1 class="md:text-6xl text-xl uppercase e-name w-[200px] md:w-full">Event name</h1>
+                                            <h1 class="md:text-6xl text-xl uppercase e-name w-[200px] md:w-full">Event
+                                                name</h1>
                                         </a>
-                                        <p class="text-sm text-lg"><i class="fa-solid fa-location-dot"></i> Dhaka, Dhanmondi-32</p>
+                                        <p class="text-sm text-lg"><i class="fa-solid fa-location-dot"></i> Dhaka,
+                                            Dhanmondi-32</p>
                                         <p class="text-sm text-lg"><i class="fa-regular fa-clock"></i> 12.30 pm</p>
                                     </div>
-                                    <button class="button-click border mt-2 md:mt-10 md:w-40 p-2 md:p-3 mb-3 rounded-lg">
+                                    <button
+                                        class="button-click border mt-2 md:mt-10 md:w-40 p-2 md:p-3 mb-3 rounded-lg">
                                         click here <i class="fa-solid fa-link"></i>
                                     </button>
                                 </div>
@@ -375,19 +447,22 @@
                                 <div class="slide-button flex flex-col text-center items-center">
                                     <div class="">
                                         <a href="">
-                                            <h1 class="md:text-6xl text-xl uppercase e-name w-[200px] md:w-full">Event name</h1>
+                                            <h1 class="md:text-6xl text-xl uppercase e-name w-[200px] md:w-full">Event
+                                                name</h1>
                                         </a>
-                                        <p class="text-sm text-lg"><i class="fa-solid fa-location-dot"></i> Dhaka, Dhanmondi-32</p>
+                                        <p class="text-sm text-lg"><i class="fa-solid fa-location-dot"></i> Dhaka,
+                                            Dhanmondi-32</p>
                                         <p class="text-sm text-lg"><i class="fa-regular fa-clock"></i> 12.30 pm</p>
                                     </div>
-                                    <button class="button-click border mt-2 md:mt-10 md:w-40 p-2 md:p-3 mb-3 rounded-lg">
+                                    <button
+                                        class="button-click border mt-2 md:mt-10 md:w-40 p-2 md:p-3 mb-3 rounded-lg">
                                         click here <i class="fa-solid fa-link"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <button class="carousel-buttonn prevv"><i class="fa-solid fa-arrow-left"></i></button>
                 <button class="carousel-buttonn nextt"><i class="fa-solid fa-arrow-right"></i></button>
@@ -395,7 +470,6 @@
         </div>
         <!-- slider info end -->
     </div>
-
     <!-- video div end -->
 
     <!-- how to take events steps -->
@@ -547,9 +621,8 @@
         </div>
     </div>
 
-
     <!-- gallary section -->
-    <div class="flex justify-center uppercase text-3xl font-bold mb-5">
+    <div class="flex justify-center uppercase text-3xl font-bold mb-5 md:mb-0">
         <h1 data-aos="fade-right">gallery </h1>
         <span class="mt-[10%] md:mt-[4%]" style="background: #f4f81f;
         height: 3px;
@@ -561,8 +634,8 @@
     <div class="flex justify-center overflow-hidden" data-aos="fade-up">
 
         <div class="container">
-            <img class="w-52 mt-40" src="./imagehere/blob-1-opacity-58 (1).gif" alt=""
-                style="position: absolute; right: 96%;">
+            <!-- <img class="w-52 mt-40" src="./imagehere/blob-1-opacity-58 (1).gif" alt=""
+                style="position: absolute; right: 96%;"> -->
             <img class="w-96 mb-40" src="./imagehere/blob-1-opacity-58 (1).gif" alt=""
                 style="position: absolute; left: 94%;">
             <div class="gallery">
@@ -691,7 +764,8 @@
 
     <!-- script tag -->
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"

@@ -184,23 +184,7 @@
             font-size: 25px;
         }
 
-        @media (max-width: 768px) {
-            .form {
-                height: 100%;
-                width: 100%;
-                border-radius: 20px;
-                backdrop-filter: blur(10px);
-                box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
-                text-align: center;
-                padding: 20px;
-            }
-
-            .container-form {
-                position: absolute;
-                width: 100%;
-                padding: 10px;
-            }
-        }
+        
         .loader {
         transform: rotateZ(45deg);
         perspective: 1000px;
@@ -273,6 +257,40 @@
           box-shadow: .2em -.2em 0 0 currentcolor;
         }
       }
+
+      @media (max-width: 768px) {
+            .form {
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+                backdrop-filter: blur(10px);
+                box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                padding: 20px;
+            }
+
+            .container-form {
+                position: absolute;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .drop-4 {
+            background: rgba(136, 94, 235, 0.3);
+            height: 120px;
+            width: 120px;
+            top: -150px;
+            right: 100px;
+        }
+        .drop-3 {
+            background: rgba(94, 179, 235, 0.3);
+            height: 100px;
+            width: 100px;
+            bottom: -60px;
+            right: 80px;
+            z-index: -1;
+        }
+        }
     </style>
 </head>
 
@@ -309,15 +327,15 @@
             <input type="submit" value="Sign in" class="mb-4"><br>
             <span>New in here ? <a href="SignUp.html" class="hover:border-b">Create Acoount</a></span>
         </form>
-        <div class="drops md:block hidden">
-            <div class="drop drop-1 animate__animated animate__bounceInLeft"></div>
-            <div class="drop drop-2 animate__animated animate__bounceInRight"></div>
-            <div class="drop drop-3 animate__animated animate__bounceInDown"></div>
-            <div class="drop drop-4 animate__animated animate__bounceInUp"></div>
-            <div class="drop drop-5 animate__animated animate__bounceInDown"></div>
-            <div class="drop drop-6 animate__animated animate__bounceInUp"></div>
-            <div class="drop drop-7 animate__animated animate__bounceInLeft"></div>
-            <div class="drop drop-8 animate__animated animate__bounceInRight"></div>
+        <div class="drops">
+            <div class="drop md:block drop-1 animate__animated animate__bounceInLeft"></div>
+            <div class="drop md:block hidden drop-2 animate__animated animate__bounceInRight"></div>
+            <div class="drop md:block  drop-3 animate__animated animate__bounceInDown"></div>
+            <div class="drop md:block  drop-4 animate__animated animate__bounceInUp"></div>
+            <div class="drop md:block hidden drop-5 animate__animated animate__bounceInDown"></div>
+            <div class="drop md:block  drop-6 animate__animated animate__bounceInUp"></div>
+            <div class="drop md:block hidden drop-7 animate__animated animate__bounceInLeft"></div>
+            <div class="drop md:block hidden drop-8 animate__animated animate__bounceInRight"></div>
         </div>
     </div>
     <script>
