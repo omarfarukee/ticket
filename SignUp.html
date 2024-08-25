@@ -272,10 +272,20 @@
           box-shadow: .2em -.2em 0 0 currentcolor;
         }
       }
+      
+      @media (max-width: 768px) {
+        .drop-4 {
+            background: rgba(136, 94, 235, 0.3);
+            height: 120px;
+            width: 120px;
+            top: -150px;
+            right: 100px;
+        }
+      }
     </style>
 </head>
 
-<body onload='LoaderFunction()'>
+<body onload='LoaderFunction()' class="">
 
     <!-- loader -->
     <div class="fixed inset-0 z-10 flex items-center justify-center bg-transparent backdrop-blur-lg" id="loader-container">
@@ -310,15 +320,15 @@
             <input type="submit" value="Sign up" class="mb-4"><br>
             <span class="">Already have Account? <a href="login.html" class="hover:border-b">Sign in</a></span>
         </form>
-        <div class="drops md:block hidden">
-            <div class="drop drop-1 animate__animated animate__bounceInLeft"></div>
-            <div class="drop drop-2 animate__animated animate__bounceInRight"></div>
-            <div class="drop drop-3 animate__animated animate__bounceInDown"></div>
-            <div class="drop drop-4 animate__animated animate__bounceInUp"></div>
-            <div class="drop drop-5 animate__animated animate__bounceInDown"></div>
-            <div class="drop drop-6 animate__animated animate__bounceInUp"></div>
-            <div class="drop drop-7 animate__animated animate__bounceInLeft"></div>
-            <div class="drop drop-8 animate__animated animate__bounceInRight"></div>
+        <div class="drops">
+            <div class="drop md:block drop-1 animate__animated animate__bounceInLeft"></div>
+            <div class="drop md:block hidden drop-2 animate__animated animate__bounceInRight"></div>
+            <div class="drop md:block hidden drop-3 animate__animated animate__bounceInDown"></div>
+            <div class="drop md:block  drop-4 animate__animated animate__bounceInUp"></div>
+            <div class="drop md:block hidden drop-5 animate__animated animate__bounceInDown"></div>
+            <div class="drop md:block  drop-6 animate__animated animate__bounceInUp"></div>
+            <div class="drop md:block hidden drop-7 animate__animated animate__bounceInLeft"></div>
+            <div class="drop md:block hidden drop-8 animate__animated animate__bounceInRight"></div>
         </div>
     </div>
     <script>
